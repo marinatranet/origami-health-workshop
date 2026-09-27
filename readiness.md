@@ -1,27 +1,25 @@
 # Before the Origami Health AIDP workshop
 
-This is a guide-only pilot release for Half-Day 1 and Half-Day 2. Each session is planned for 90 minutes with prepared assets. Day 1 includes 20 minutes of setup, 60 minutes of exercises and 10 minutes of catch-up. Day 2 includes 5 minutes of readiness, 75 minutes of exercises and 10 minutes of catch-up. Timing is not yet pilot-validated. No fixed clock times are published.
+Both AIDP days are planned for 90 minutes with prepared assets and ten minutes of catch-up. Day 1 includes a 20-minute setup allowance. No fixed clock times are published.
 
-## Available now
+## Downloadable now — asset preview
 
-- Participant lab guide and duration-based agenda.
-- Member Benefits service-brief template.
-- This participant readiness checklist.
+- Guides, duration-based agenda and service-brief template.
+- Participant pack: six unexecuted notebook files, seven synthetic CSV sources, prepared model, benefits documents, test cases and evidence templates.
+- asset-map.md maps each website exercise to the matching files.
 
-## In preparation — not ready to import or run
+These files passed local checks; they are not a completed cloud deployment. The facilitator must configure and test the full pack before class. Notebook imports alone are insufficient: shared helper files, data, model, contracts and runtime bindings are required.
 
-- Origami starter notebooks and deterministic synthetic data.
-- Validated workflows, model/scoring artifacts and Benefits Knowledge Base.
-- Member Benefits Inquiry Copilot starter flow and tested tool bindings.
+## Live preparation still required
 
-The guide describes the target exercises, not proof of deployed resources. Do not use a generic claims-triage notebook as a substitute for the member-benefits lab.
+Warm Spark/Delta; participant identities and permissions; isolated output paths; prepared Lakehouse tables/connection; tested model registration if demonstrated; a built benefits index; a preconnected, tested Copilot. The Copilot design JSON is NOT an importable AIDP bundle. Live RAG/agent tests and the classroom timing pilot remain pending.
 
-## Participant readiness
+## Participant checklist
 
-1. Use your own approved AIDP login; do not share administrator credentials.
-2. Obtain your assigned participant slot and workspace link privately from the facilitator.
-3. Confirm workspace access before class. The facilitator prepares compute, data and notebook assets.
-4. During Day 1 setup, verify your assigned source and output access and report failures.
-5. Use synthetic examples only. Do not upload real member, claim, policy or customer data.
+1. Use your own approved AIDP login, never shared admin credentials.
+2. Obtain the assigned slot and workspace link privately.
+3. Confirm access before class; do not provision infrastructure during the lab.
+4. Use synthetic data only and save completed evidence privately.
+5. Core tasks are mandatory; optional tasks do not consume the catch-up buffer.
 
-Participants use AIDP Workbench for the labs; local CLI installation is not a participant prerequisite. Administrators use CLI-driven preparation separately. OAC is outside this pilot release.
+OAC is outside this asset preview.

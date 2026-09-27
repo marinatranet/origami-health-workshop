@@ -1,9 +1,9 @@
 # Origami Health — AIDP hands-on workshop
 
-Public participant guide for two 90-minute AIDP sessions using prepared assets. Fictional training organization; synthetic examples only.
+Two 90-minute AIDP sessions using facilitator-prepared assets. Fictional training organization and synthetic data only.
 
-Status: guide-only pilot. Runnable notebooks, datasets and agent assets are in preparation and are not included in this release.
+Current release: v0.3.0-asset-preview. Guides and the participant asset pack are downloadable. Local fixture/model/contract checks passed; Spark, Lakehouse, registered-model, RAG/agent and classroom timing validation are still pending.
 
-Open `index.html` or the published GitHub Pages site. Download `origami-aidp-guides-v0.2.0.zip` for the offline guides. See `readiness.md` before attending.
+Start at index.html or the published GitHub Pages site. See asset-map.md and readiness.md. Download the FULL participant pack; the notebooks depend on shared files and administrator runtime bindings.
 
-No credentials, runtime identifiers or attendee roster belong in this repository. Administrator preparation and environment configuration are kept separately.
+Administrator preparation, live identifiers, identities and credentials are not published in this repository.

@@ -2,7 +2,7 @@
 
 Each AIDP hands-on session is planned for 90 minutes using prepared, tested assets. Day 1 includes 20 minutes of setup checks, 60 minutes of guided exercises and 10 minutes of catch-up; Day 2 includes 5 minutes of readiness, 75 minutes of guided exercises and 10 minutes of catch-up. Timing is an estimate until a classroom-style pilot passes. Separate slides, breaks and Q&A share the remaining 90 minutes of each three-hour day. No clock times are displayed. OAC is separately owned and its draft is unchanged.
 
-AIDP pilot guide: runnable lab downloads, environment deployment and timed validation are still in preparation.
+Asset preview available: notebooks, synthetic data, prepared model and exercise files are locally validated. Live AIDP execution, knowledge-base/agent deployment and the timed pilot remain pending.
 
 Claims, Benefits, Provider and Member Operations: build trusted data, investigate unusual claims, answer benefit inquiries with evidence, and explore operational and retail opportunities.
 
@@ -19,6 +19,10 @@ Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm 
 
 Save: A completed access checklist or a recorded blocker and agreed paired-work fallback.
 
+Files in the participant asset pack:
+
+- day1/00_setup_check.ipynb
+
 ## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (30 min)
 
 Turn claims, members, enrollment, plans and provider inputs into traceable, conformed data products.
@@ -26,7 +30,7 @@ Turn claims, members, enrollment, plans and provider inputs into traceable, conf
 ### Before you begin
 
 - Assigned participant folder and schema; running Spark compute; prepared synthetic source files and starter notebooks.
-- The facilitator supplies the volume root and participant identifier. Sources include CSV plus JSON document-extraction signals; provider GeoJSON is an extension.
+- The facilitator supplies the asset root, output root and participant identifier. Seven CSV sources include claims, members, plans, enrollments, providers, benefits and usage; document-related flags are precomputed synthetic inputs, not a live document extraction integration.
 
 ### Steps
 
@@ -42,9 +46,14 @@ Turn claims, members, enrollment, plans and provider inputs into traceable, conf
 
 Save: A reconciliation summary and an explanation of one rejected record.
 
+### Files in the participant asset pack
+
+- day1/01_bronze.ipynb
+- day1/02_silver.ipynb
+
 ### Optional / take-home — outside the core timebox
 
-- Inspect multi-plan enrollment joins and flattened document evidence.
+- Inspect multi-plan enrollment joins and precomputed document-evidence flags.
 - Write a new transformation or rerun the complete pipeline from scratch.
 
 ### Facilitator preparation — before class
@@ -75,6 +84,11 @@ Expose consistent data for claims analysis, claim-level investigation and author
 
 Save: Two validated query results and the Day 2 snapshot reference.
 
+### Files in the participant asset pack
+
+- day1/03_gold.ipynb
+- day1/04_lakehouse.ipynb
+
 ### Optional / take-home — outside the core timebox
 
 - Inspect full duplicate/orphan/overlap checks and repeat-run evidence.
@@ -90,6 +104,10 @@ Save: Two validated query results and the Day 2 snapshot reference.
 Trace one supplied synthetic claim from source through Silver to a Gold view (5 minutes). Inspect one prepared allowed/denied access test and explain where scope is enforced (5 minutes). Full role setup, workflow authoring and native-lineage verification are facilitator preparation or follow-up work; declared lineage is not proof of runtime-native lineage.
 
 Save: A record trace and a role-to-data access check.
+
+Files in the participant asset pack:
+
+- day1/governance.md
 
 ## Half-Day 1 · Catch-up and save results — 10 minutes
 
@@ -126,6 +144,11 @@ Prioritize unusual claims for investigator review and explain the supporting sig
 
 Save: One annotated investigation example with its score/version reference.
 
+### Files in the participant asset pack
+
+- day2/05_claim_scoring.ipynb
+- model/prepared_model.json
+
 ### Optional / take-home — outside the core timebox
 
 - Inspect precision/recall and review-capacity tradeoffs in the seeded experiment.
@@ -157,6 +180,12 @@ Retrieve the right benefit passage for the right plan, service and effective dat
 - The unsupported answer reports the evidence gap without inventing benefit terms.
 
 Save: Two retrieval checks: one supported answer and one unsupported question.
+
+### Files in the participant asset pack
+
+- day2/06_benefits_knowledge_base.md
+- day2/retrieval-tests.json
+- documents/ingestion-manifest.json
 
 ### Optional / take-home — outside the core timebox
 
@@ -191,6 +220,12 @@ Help a service representative answer an inquiry by combining authorized member-p
 
 Save: One instruction change, three test results and a draft service brief.
 
+### Files in the participant asset pack
+
+- day2/07_member_benefits_copilot.md
+- day2/copilot-tests.json
+- contracts/copilot-design.json
+
 ### Optional / take-home — outside the core timebox
 
 - Change supervisor routing or add an additional answer-format instruction.
@@ -213,6 +248,11 @@ Example questions:
 Review the prefilled brief from the Copilot exercise (4 minutes): verify member/plan context, structured facts, cited policy and any gaps. Mark REVIEWED, EDIT_REQUIRED or ESCALATED and record a reason (4 minutes). Save the reviewer decision and timestamp (2 minutes). This is review of a draft, not approval of coverage or payment. No case is created and no message is sent.
 
 Save: A completed brief with reviewer decision, timestamp and rationale.
+
+Files in the participant asset pack:
+
+- day2/08_human_review.md
+- templates/service-brief-prefilled.md
 
 ## Half-Day 2 · Catch-up and save results — 10 minutes
 
