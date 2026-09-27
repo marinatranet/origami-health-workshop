@@ -1,6 +1,6 @@
 # Before the Origami Health AIDP workshop
 
-This is a guide-only pilot release for Half-Day 1 and Half-Day 2. Each session is 80 minutes; Day 1 includes a 20-minute setup allowance. No fixed clock times are published.
+This is a guide-only pilot release for Half-Day 1 and Half-Day 2. Each session is planned for 90 minutes with prepared assets. Day 1 includes 20 minutes of setup, 60 minutes of exercises and 10 minutes of catch-up. Day 2 includes 5 minutes of readiness, 75 minutes of exercises and 10 minutes of catch-up. Timing is not yet pilot-validated. No fixed clock times are published.
 
 ## Available now
 

@@ -1,18 +1,25 @@
 # Origami Health — Hands-on Data, Analytics & AI Workshop
 
-Each hands-on session lasts 80 minutes. Half-Day 1 includes a 20-minute setup check (allow 15–20 minutes); the remaining 60 minutes cover the labs. Separate slide decks, breaks and Q&A are outside this guide. Keep the complete workshop day within three hours; start times are flexible and are not displayed.
+Each AIDP hands-on session is planned for 90 minutes using prepared, tested assets. Day 1 includes 20 minutes of setup checks, 60 minutes of guided exercises and 10 minutes of catch-up; Day 2 includes 5 minutes of readiness, 75 minutes of guided exercises and 10 minutes of catch-up. Timing is an estimate until a classroom-style pilot passes. Separate slides, breaks and Q&A share the remaining 90 minutes of each three-hour day. No clock times are displayed. OAC is separately owned and its draft is unchanged.
 
 AIDP pilot guide: runnable lab downloads, environment deployment and timed validation are still in preparation.
 
 Claims, Benefits, Provider and Member Operations: build trusted data, investigate unusual claims, answer benefit inquiries with evidence, and explore operational and retail opportunities.
 
+## Delivery assumptions — prepared assets
+
+- Before class: participant accounts and permissions are tested, notebooks are imported, compute is warm, and source data, output schemas and the Lakehouse connection are ready.
+- Day 2 starts with a validated Day 1 snapshot, a prepared scorer, an indexed benefits knowledge base and a preconnected Copilot. Training, indexing, tool connections and deployment are not participant tasks.
+- Core tasks are mandatory; optional tasks are take-home or fast-finisher work. Catch-up time is reserved for assistance and saving results, not additional content.
+- A timed pilot must include a participant unfamiliar with the instructions and representative concurrent load. Record actual completion and any fallback used; an instructor-only run does not validate class timing.
+
 ## Half-Day 1 · Setup and access check — allow 15–20 minutes
 
-Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open starter notebook 01, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 80-minute block.
+Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open starter notebook 01, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 90-minute block.
 
 Save: A completed access checklist or a recorded blocker and agreed paired-work fallback.
 
-## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (25 min)
+## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (30 min)
 
 Turn claims, members, enrollment, plans and provider inputs into traceable, conformed data products.
 
@@ -23,21 +30,29 @@ Turn claims, members, enrollment, plans and provider inputs into traceable, conf
 
 ### Steps
 
-1. Open starter notebook 01 and confirm your participant paths and snapshot date using the setup checklist.
-2. Run the prepared Bronze cells. Inspect source lineage fields and the supplied input/accepted/rejected count summary.
-3. Run the prepared Silver cells; inspect date normalization, deduplication and one quarantined invalid reference. Transformations and joins are provided, not authored from scratch.
-4. Inspect one member with multiple dated plan enrollments and one flattened document-evidence record. Save the count/key check summary for Lab 2.
-5. If execution exceeds the timebox, use the facilitator's validated recovery snapshot and label it clearly; record the pending live run for follow-up.
+1. Confirm your participant paths and snapshot date in starter notebook 01 (3 minutes).
+2. Run the prepared Bronze cells and inspect the lineage fields and count summary (7 minutes, including execution).
+3. Run the prepared Silver cells. Locate one quarantined invalid reference and explain why it failed; transformations and joins are provided (12 minutes, including execution).
+4. Compare accepted, rejected and deduplicated counts with the supplied expected results; save the summary for Lab 2 (8 minutes).
 
 ### Check your result
 
-- Counts balance: input records equal accepted plus rejected after the documented deduplication policy.
-- Every accepted foreign key resolves; invalid references are quarantined with reasons.
-- Two participant runs write to different paths; the source files remain unchanged.
+- The supplied count reconciliation passes; the chosen rejected row has an understandable reason.
+- Your output is in the assigned participant location; the read-only source remains unchanged.
 
-Save: Bronze and Silver datasets, a reject report and a source-to-output record trace.
+Save: A reconciliation summary and an explanation of one rejected record.
 
-## Half-Day 1 · Lab 2: Publish Claims and Benefits data to AI Lakehouse (25 min)
+### Optional / take-home — outside the core timebox
+
+- Inspect multi-plan enrollment joins and flattened document evidence.
+- Write a new transformation or rerun the complete pipeline from scratch.
+
+### Facilitator preparation — before class
+
+- Facilitator: verify the full key/reference test suite, participant isolation and expected counts before class. Run-time and queuing must fit inside the stated timeboxes.
+- If a live run cannot finish, identify the facilitator recovery snapshot explicitly and record the live task as incomplete; viewing a snapshot is not successful execution.
+
+## Half-Day 1 · Lab 2: Publish Claims and Benefits data to AI Lakehouse (20 min)
 
 Expose consistent data for claims analysis, claim-level investigation and authorized member-benefit inquiry.
 
@@ -48,24 +63,45 @@ Expose consistent data for claims analysis, claim-level investigation and author
 
 ### Steps
 
-1. Inspect the supplied grain diagram for claims, enrollment intervals and benefit versions.
-2. Run the prepared notebook 03 Gold cells, then notebook 04 Lakehouse cells, against your assigned schema. Use the validated recovery snapshot if a run cannot finish within the timebox; record the live work still pending.
-3. Run the supplied reconciliation query pack and compare claim counts and amounts with expected results. Inspect the key-quality report and one dated member-plan lookup.
-4. Save the results and inspect prepared unchanged-source rerun evidence. Workflow dependencies and access controls are covered in the following governance checkpoint; full rebuild and rerun testing are extensions.
+1. Inspect the prepared grain diagram and assigned target; do not configure the database connection (3 minutes).
+2. Run the selected notebook 03 Gold cells, followed by the prepared notebook 04 Lakehouse cells (7 minutes, including execution).
+3. Run two supplied checks: claim count/amount reconciliation and a dated active-plan lookup for one synthetic member (7 minutes).
+4. Save the two query results and snapshot reference for Day 2 (3 minutes).
 
 ### Check your result
 
-- Claims totals reconcile without fan-out; rates use total numerator divided by total denominator.
-- Member-plan lookup returns only the assigned member and plans active on the selected date.
-- Sequential rerun of unchanged fixtures produces no duplicate target rows; changed-source update behavior is tested separately before being claimed.
+- Claim counts and amounts match expected results without join fan-out.
+- The dated lookup returns the expected active plans for the authorized synthetic member.
 
-Save: Governed Claims and Benefits views, reconciliation evidence and a documented Day 2 data snapshot.
+Save: Two validated query results and the Day 2 snapshot reference.
+
+### Optional / take-home — outside the core timebox
+
+- Inspect full duplicate/orphan/overlap checks and repeat-run evidence.
+- Author workflow dependencies, connection settings or new Lakehouse tables.
+
+### Facilitator preparation — before class
+
+- Facilitator: prepare tables, grants, connections and query templates; verify full schemas, foreign keys, benefit versions, scope and unchanged-source rerun behavior ahead of class.
+- This timebox assumes Gold and Lakehouse execution fits the seven-minute allowance under representative concurrency. Record a recovery snapshot as fallback rather than completed live publishing.
 
 ## Half-Day 1 · Governance exercise
 
-Trace one synthetic claim from its source file through Silver to an approved Gold view. Inspect the prepared engineer, analyst and service-representative roles. Verify member identifiers and benefit usage are exposed only where needed. Compare existing controls with the target architecture; roadmap items such as richer lineage, ontology or agent discovery are discussion topics until availability is verified.
+Trace one supplied synthetic claim from source through Silver to a Gold view (5 minutes). Inspect one prepared allowed/denied access test and explain where scope is enforced (5 minutes). Full role setup, workflow authoring and native-lineage verification are facilitator preparation or follow-up work; declared lineage is not proof of runtime-native lineage.
 
 Save: A record trace and a role-to-data access check.
+
+## Half-Day 1 · Catch-up and save results — 10 minutes
+
+Use this reserved time for help, pending core checks and saving the reconciliation/query evidence. Do not add new mandatory content. Record incomplete live tasks and any recovery snapshot used.
+
+Save: Saved Day 1 evidence and an honest completion checklist.
+
+## Half-Day 2 · Day 2 readiness check
+
+Reconnect, open the assigned scorer, knowledge base and preconnected Copilot, and confirm the validated Day 1 snapshot. Account fixes and deployment are pre-class tasks. Escalate any blocker to the facilitator rather than attempting a fresh setup.
+
+Save: Readiness confirmed or a recorded blocker.
 
 ## Half-Day 2 · Lab 3: Score claims anomalies for investigation (15 min)
 
@@ -78,19 +114,26 @@ Prioritize unusual claims for investigator review and explain the supporting sig
 
 ### Steps
 
-1. Inspect the prepared feature snapshot and label definition. Check that the time-based split excludes post-scoring decisions and investigator outcomes from input features.
-2. Run the prepared scorer and inspect the seeded experiment's baseline comparison. Full training and AutoML setup are take-home extensions.
-3. Inspect the supplied evaluation: precision, recall and precision-at-review-capacity on held-out synthetic data. For anomaly-only scores, inspect ranking without claiming supervised accuracy.
-4. Inspect the resulting queue: one current score per claim and model version, reason codes, scoring timestamp and review priority.
-5. Open two flagged and one unflagged example. Explain one false positive and how review capacity changes the threshold.
+1. Inspect the prepared feature/label card and its human-review boundary (3 minutes).
+2. Run the prepared scorer and open the review queue (5 minutes, including execution).
+3. Inspect one flagged claim and the supplied legitimate/false-positive example; explain the reason code without asserting fraud (5 minutes).
+4. Save the claim reference, score/model version and one review observation (2 minutes).
 
 ### Check your result
 
-- Every scored claim has a model/version reference and an interpretable evidence trail.
-- Registered model and batch scorer match on the same test rows; a rules baseline is labelled separately.
-- The queue says suspected anomaly or review priority; it never asserts that a member or provider committed fraud.
+- The selected score has a model/version reference and evidence supporting its review priority.
+- The explanation distinguishes an unusual claim from confirmed fraud.
 
-Save: A scored investigator queue and a short model evaluation record.
+Save: One annotated investigation example with its score/version reference.
+
+### Optional / take-home — outside the core timebox
+
+- Inspect precision/recall and review-capacity tradeoffs in the seeded experiment.
+- Run training, compare AutoML candidates or change thresholds.
+
+### Facilitator preparation — before class
+
+- Facilitator: train the model, verify leakage-safe splits, evaluation and registered-model/batch-scorer parity; preflight scoring and provide seeded results as a labelled fallback.
 
 ## Half-Day 2 · Lab 4: Test the Benefits Knowledge Base (15 min)
 
@@ -103,44 +146,60 @@ Retrieve the right benefit passage for the right plan, service and effective dat
 
 ### Steps
 
-1. Open the prepared knowledge base. Inspect its manifest, plan IDs, document versions, effective dates and source configuration.
-2. Run three supplied retrieval questions covering a service limit, an exclusion and supporting documents. Check the cited plan, version and section/page.
-3. Run one unsupported-service question and inspect the prepared expired-document and conflicting-evidence test results. Record gaps or escalation rather than accepting invented policy.
-4. Save the retrieval evaluation sheet. Creating and ingesting a new index is a take-home extension.
+1. Open the prepared knowledge base and inspect the plan/version metadata (3 minutes).
+2. Ask one supplied benefit-limit question and verify its cited passage, plan, version and inquiry date (6 minutes).
+3. Ask one unsupported-service question and confirm an insufficient-evidence response rather than an invented policy (4 minutes).
+4. Save the two results and citations or refusal explanation (2 minutes).
 
 ### Check your result
 
-- Three expected answers cite the correct source and version.
-- An out-of-scope or unsupported question is identified correctly.
-- An expired or mismatched plan document is not treated as current benefit evidence.
+- The supported answer cites the expected current plan document and section.
+- The unsupported answer reports the evidence gap without inventing benefit terms.
 
-Save: A benefits knowledge base and a retrieval evaluation sheet.
+Save: Two retrieval checks: one supported answer and one unsupported question.
 
-## Half-Day 2 · Lab 5: Complete the Member Benefits Inquiry Copilot (40 min)
+### Optional / take-home — outside the core timebox
+
+- Test exclusions, document requirements, expired versions and conflicting passages.
+- Create or ingest a new knowledge base.
+
+### Facilitator preparation — before class
+
+- Facilitator: ingest/index the documents and independently test exclusions, expired plans, conflicting evidence and irrelevant retrieval before class.
+
+## Half-Day 2 · Lab 5: Adapt and test the Member Benefits Inquiry Copilot (35 min)
 
 Help a service representative answer an inquiry by combining authorized member-plan facts with cited benefit documents.
 
 ### Before you begin
 
-- Labs 2 and 4 pass; AI compute, a starter flow, approved SQL tools and three evaluation cases are prepared. Participants complete routing, evidence instructions and connections rather than author every component from scratch.
-- SQL tools use approved views and enforce member scope through trusted session/tool parameters, not through a member ID accepted freely from the prompt.
+- A tested, preconnected supervisor/SQL/RAG starter is assigned to each participant. Model, tool bindings, permissions and member scope are configured before class.
+- SQL tools enforce authorized member scope outside the prompt. The participant changes an answer instruction, not access controls.
 
 ### Steps
 
-1. Open the starter flow. Complete supervisor routing for member/plan questions to SQL, document questions to RAG and combined questions to both.
-2. Connect the prepared Member and Plan SQL tools and Benefits RAG executor. Inspect trusted member scope, plan/date filtering and required document/version/section citations.
-3. Complete the response instructions: member context, active plans, structured and document evidence, gaps and recommended review step.
-4. Run three required cases: a SQL-only lookup, a RAG-only benefit question and a combined two-plan inquiry. Flag unresolved coordination-of-benefits rules without automatically selecting coverage.
-5. Inspect the facilitator's prepared negative-test traces for unauthorized member access, missing policy, conflicting versions and instructions embedded in documents. Rerun the unauthorized-access case; additional negative tests are fast-finisher exercises. All negative tests must pass during facilitator preparation.
-6. Save the flow and evaluation evidence. Pass the combined answer to the service-brief exercise for human review.
+1. Open the working starter and trace supervisor → bounded SQL/RAG tools → evidence-based answer (5 minutes).
+2. Change one response instruction to require plan/version citations and explicit evidence gaps; save your assigned copy (5 minutes).
+3. Run three supplied cases: an authorized SQL lookup, a combined two-plan benefit inquiry and an unauthorized-member request. Compare against the answer checklist and tool traces (18 minutes, including responses).
+4. Save the results and use the combined answer to populate the prepared service-brief template (7 minutes).
 
 ### Check your result
 
-- SQL totals and member-plan facts match the governed views; policy statements have resolvable citations.
-- Unauthorized member requests fail at the tool/data boundary.
-- No final coverage, eligibility, denial, payment or medical decision is made by the Copilot.
+- The authorized lookup matches the prepared expected facts; the combined answer has current citations and identifies unresolved coordination rules.
+- The unauthorized request is rejected by the tool/data boundary, not just by prompt instructions.
+- The Copilot makes no final coverage, eligibility, denial, payment or medical decision.
 
-Save: Supervisor + Member/Plan SQL + Benefits RAG flow, evaluation record and draft service brief.
+Save: One instruction change, three test results and a draft service brief.
+
+### Optional / take-home — outside the core timebox
+
+- Change supervisor routing or add an additional answer-format instruction.
+- Inspect and rerun the facilitator's policy-conflict and prompt-injection tests.
+
+### Facilitator preparation — before class
+
+- Facilitator: establish and validate all tool connections, model access and member-scope enforcement before class. Verify SQL-only, RAG-only, combined, missing-policy, conflict and prompt-injection cases separately.
+- RAG-only practice is completed in Lab 4; creating an agent, connecting tools from scratch and endpoint deployment are outside this timebox.
 
 Example questions:
 
@@ -151,6 +210,12 @@ Example questions:
 
 ## Half-Day 2 · Human-in-the-loop service brief
 
-Review the prefilled service-brief template from the Copilot exercise. Verify a synthetic member reference, inquiry date, active plans, data evidence, document citations, missing facts, proposed next step and owner. Begin in DRAFT. A representative marks REVIEWED, EDIT_REQUIRED or ESCALATED and records a rationale. Any case creation or message sending is a separate sandbox integration; this exercise ends with a reviewed draft.
+Review the prefilled brief from the Copilot exercise (4 minutes): verify member/plan context, structured facts, cited policy and any gaps. Mark REVIEWED, EDIT_REQUIRED or ESCALATED and record a reason (4 minutes). Save the reviewer decision and timestamp (2 minutes). This is review of a draft, not approval of coverage or payment. No case is created and no message is sent.
 
 Save: A completed brief with reviewer decision, timestamp and rationale.
+
+## Half-Day 2 · Catch-up and save results — 10 minutes
+
+Use the buffer for response delays, questions, pending core checks and saving the reviewed brief. Optional challenges do not displace core tasks or extend the session.
+
+Save: Saved Day 2 evidence and an honest completion checklist.
