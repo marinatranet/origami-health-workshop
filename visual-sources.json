@@ -1,0 +1,60 @@
+{
+  "screenshots": {
+    "screen-notebook-overview.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_addsamplecode.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html",
+      "sha256": "d0dc3a0a11592061d2a201aad0667fe44437b33fe69f2df7c746c6c1b0a18416",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-notebook-run.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_runmenu.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html",
+      "sha256": "cb8b745bceaffa9bc6cb17f5a6e913d001d591f622e9f73ebe3baa7b1777cfdb",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-notebook-results.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_copydownload.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html",
+      "sha256": "7aae0428b39d243de12c866160da3d2040cb24a7e6000ef98553af99e9d0caa2",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-knowledge-base.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/knowledgebase_catalog.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/knowledge-bases.html",
+      "sha256": "11147192f655c8fd19513fdd548b3e762198419021f0a388c502b4bd7ab8593f",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-agent-canvas.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_canvas.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html",
+      "sha256": "dee1458be414d5e5991a2ac05ffaed7f2ce9a2ae09008496c5d205267263e503",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-agent-instructions.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_supervisorconfig.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html",
+      "sha256": "256a4430230fd630beff4874931837f390e1ffe1dbf71cd2a29108924646ae98",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-agent-session.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_createtest.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html",
+      "sha256": "a96c8833fa4d2627b0af4f3b23fe1df99a802a27a4625680c791f3ef7650d85e",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    }
+  }
+}

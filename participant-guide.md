@@ -23,6 +23,20 @@ Files in the participant asset pack:
 
 - day1/00_setup_check.ipynb
 
+### Visual walkthrough
+
+Open `index.html#setup` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
+#### Find your notebook and its compute
+
+![Oracle AIDP notebook showing the workspace breadcrumb, attached compute and code cells.](screen-notebook-overview.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Top breadcrumb: check your assigned folder and notebook, not the example names shown here.
+- Top right: confirm the facilitator-assigned Spark compute is active.
+- Read the Markdown instructions above each cell. Run the first binding cell in every notebook.
+
 ## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (30 min)
 
 Turn claims, members, enrollment, plans and provider inputs into traceable, conformed data products.
@@ -60,6 +74,20 @@ Save: A reconciliation summary and an explanation of one rejected record.
 
 - Facilitator: verify the full key/reference test suite, participant isolation and expected counts before class. Run-time and queuing must fit inside the stated timeboxes.
 - If a live run cannot finish, identify the facilitator recovery snapshot explicitly and record the live task as incomplete; viewing a snapshot is not successful execution.
+
+### Visual walkthrough
+
+Open `index.html#lab1` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
+#### Run one cell at a time
+
+![Oracle AIDP Run menu, including Run selected cells and Run all.](screen-notebook-run.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Select the next code cell, then use Run selected cell(s) or the cell play control.
+- Wait for completion and inspect the result before continuing. Do not start with Run all.
+- The reference image shows Mac shortcuts; use the menu or play control on your laptop.
 
 ## Half-Day 1 · Lab 2: Publish Claims and Benefits data to AI Lakehouse (20 min)
 
@@ -99,6 +127,20 @@ Save: Two validated query results and the Day 2 snapshot reference.
 - Facilitator: prepare tables, grants, connections and query templates; verify full schemas, foreign keys, benefit versions, scope and unchanged-source rerun behavior ahead of class.
 - This timebox assumes Gold and Lakehouse execution fits the seven-minute allowance under representative concurrency. Record a recovery snapshot as fallback rather than completed live publishing.
 
+### Visual walkthrough
+
+Open `index.html#lab2` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
+#### Keep the output that proves your check
+
+![Oracle AIDP table output with Copy and Download CSV controls highlighted.](screen-notebook-results.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- For a displayed result table, find Copy or Download beside the output.
+- Save your Origami claim reconciliation and active-plan query result, not these example rows.
+- A finished cell is not enough: compare the values with the expected results below.
+
 ## Half-Day 1 · Governance exercise
 
 Trace one supplied synthetic claim from source through Silver to a Gold view (5 minutes). Inspect one prepared allowed/denied access test and explain where scope is enforced (5 minutes). Full role setup, workflow authoring and native-lineage verification are facilitator preparation or follow-up work; declared lineage is not proof of runtime-native lineage.
@@ -108,6 +150,10 @@ Save: A record trace and a role-to-data access check.
 Files in the participant asset pack:
 
 - day1/governance.md
+
+### Visual walkthrough
+
+Open `index.html#governance` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
 
 ## Half-Day 1 · Catch-up and save results — 10 minutes
 
@@ -158,6 +204,10 @@ Save: One annotated investigation example with its score/version reference.
 
 - Facilitator: train the model, verify leakage-safe splits, evaluation and registered-model/batch-scorer parity; preflight scoring and provide seeded results as a labelled fallback.
 
+### Visual walkthrough
+
+Open `index.html#lab3` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
 ## Half-Day 2 · Lab 4: Test the Benefits Knowledge Base (15 min)
 
 Retrieve the right benefit passage for the right plan, service and effective date.
@@ -195,6 +245,20 @@ Save: Two retrieval checks: one supported answer and one unsupported question.
 ### Facilitator preparation — before class
 
 - Facilitator: ingest/index the documents and independently test exclusions, expired plans, conflicting evidence and irrelevant retrieval before class.
+
+### Visual walkthrough
+
+Open `index.html#lab4` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
+#### Locate the prepared knowledge base
+
+![Oracle Master Catalog with Knowledge Bases highlighted under a catalog schema.](screen-knowledge-base.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Open Master catalog, then the catalog and schema assigned by the facilitator.
+- Open Knowledge Bases and select the prepared benefits index. Do not create or ingest during the core lab.
+- Run R1 and R2 through the assigned RAG test interface; a KB is not queried directly.
 
 ## Half-Day 2 · Lab 5: Adapt and test the Member Benefits Inquiry Copilot (35 min)
 
@@ -243,6 +307,40 @@ Example questions:
 - This synthetic member has two active plans. Compare the relevant evidence, identify missing coordination rules and draft a service brief for a representative to review.
 - The plan data and policy passage disagree. Show the conflict, avoid a definitive coverage answer and identify the review required.
 
+### Visual walkthrough
+
+Open `index.html#lab5` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
+
+#### Recognize the agent canvas
+
+![Oracle AIDP visual builder with palette, mode selector and zoom controls annotated.](screen-agent-canvas.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Palette on the left: recognize the node types; the class flow should already be connected.
+- Center: trace the provided SQL and retrieval routes. This blank reference canvas is not the class starting state.
+- Use the facilitator-assigned flow. A missing flow or inactive AI compute is a stop-and-ask checkpoint.
+
+#### Make the one instruction change
+
+![Oracle AIDP supervisor node selected with its Configuration tab displayed.](screen-agent-instructions.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Select the designated instruction-bearing node and open Configuration.
+- Add the citation instruction from this lab and save only your assigned copy.
+- Keep tool permissions, model selection and compute settings unchanged.
+
+#### Start a clean test session
+
+![Oracle AIDP Playground with session selector and create-session control highlighted.](screen-agent-session.png)
+
+Product reference from Oracle documentation, not a live Origami capture. Example names and data differ.
+
+- Switch to Playground after the facilitator confirms AI readiness.
+- Create a fresh test session so previous answers do not influence your test.
+- Run C1, C2 and C3. Capture the actual answer, tool evidence and citations; expected answers are not test results.
+
 ## Half-Day 2 · Human-in-the-loop service brief
 
 Review the prefilled brief from the Copilot exercise (4 minutes): verify member/plan context, structured facts, cited policy and any gaps. Mark REVIEWED, EDIT_REQUIRED or ESCALATED and record a reason (4 minutes). Save the reviewer decision and timestamp (2 minutes). This is review of a draft, not approval of coverage or payment. No case is created and no message is sent.
@@ -253,6 +351,10 @@ Files in the participant asset pack:
 
 - day2/08_human_review.md
 - templates/service-brief-prefilled.md
+
+### Visual walkthrough
+
+Open `index.html#human-review` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
 
 ## Half-Day 2 · Catch-up and save results — 10 minutes
 
