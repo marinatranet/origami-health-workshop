@@ -2,7 +2,7 @@
 
 Each AIDP hands-on session is planned for 90 minutes using prepared, tested assets. Day 1 includes 20 minutes of setup checks, 60 minutes of guided exercises and 10 minutes of catch-up; Day 2 includes 5 minutes of readiness, 75 minutes of guided exercises and 10 minutes of catch-up. Timing is an estimate until a classroom-style pilot passes. Separate slides, breaks and Q&A share the remaining 90 minutes of each three-hour day. No clock times are displayed. OAC is separately owned and its draft is unchanged.
 
-Asset preview available: notebooks, synthetic data, prepared model and exercise files are locally validated. Live AIDP execution, knowledge-base/agent deployment and the timed pilot remain pending.
+Asset preview available: notebooks, synthetic data, prepared model and exercise files are locally validated. See the release readiness checklist for facilitator rehearsal results. Knowledge-base/agent deployment, class access and timed delivery remain pending.
 
 Claims, Benefits, Provider and Member Operations: build trusted data, investigate unusual claims, answer benefit inquiries with evidence, and explore operational and retail opportunities.
 

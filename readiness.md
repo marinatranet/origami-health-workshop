@@ -8,7 +8,11 @@ Both AIDP days are planned for 90 minutes with prepared assets and ten minutes o
 - Participant pack: six unexecuted notebook files, seven synthetic CSV sources, prepared model, benefits documents, test cases and evidence templates.
 - asset-map.md maps each website exercise to the matching files.
 
-These files passed local checks; they are not a completed cloud deployment. The facilitator must configure and test the full pack before class. Notebook imports alone are insufficient: shared helper files, data, model, contracts and runtime bindings are required.
+These reusable files passed local checks and remain unexecuted, with runtime writes disabled by default. Notebook imports alone are insufficient: shared helper files, data, model, contracts and privately assigned runtime bindings are required. Use the facilitator-preloaded folder when one has been assigned; the ZIP is the backup, not a replacement for its class-specific bindings.
+
+## Facilitator rehearsal — checked 2026-09-28
+
+Readiness, the Day 1 data pipeline, Lakehouse results and prepared-model batch scoring passed in a facilitator environment. Five Lakehouse datasets were independently checked against complete expected fingerprints. A class-specific staff exercise-case correction was validated separately; it does not change the reusable participant notebooks. These results do not prove participant access, cross-user isolation or classroom timing.
 
 ## Live preparation still required
 

@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.0-asset-preview",
+  "version": "v0.3.1-learner-preview",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -8,18 +8,28 @@
   "notebooksIncluded": true,
   "readyForLiveWorkshop": false,
   "localValidation": "PASS",
-  "liveAIDP": "NOT_RUN",
+  "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "99191943d032dc82e018b92de3b15ce8f4d0e3b863ceb8f35dc4024f77b01d2c",
+    "index.html": "797658d6dac85a0caa159ba316fa373e69ab77074ef0d7c79a8f7abd148c7585",
     "styles.css": "aa092db18e925a65c09b6ad1e17fe95ff3bda8b5e841d6ed8b10a411c785836b",
-    "README.md": "980557700d6bee971b0c06560a9240849c26deb070fef9472cd5290b8ab7fe5f",
+    "README.md": "f86724dd3d1f096701b2a62210882106af6aae45ca3c8ed175b485fa71a5083e",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-aidp-guides-v0.3.0.zip": "16cf7b351bc6fc396d9f2e75a7382b0e0621d44b8bb4950dc964403e74ce948a",
-    "origami-aidp-participant-v0.3.0.zip": "6ae95b6d95ce50700b091537997b090316a92f74c0f77811129f78a53bede1c2",
-    "participant-guide.md": "b9a958c6022b169c069c6d9e40c051b48d9596df54f5b42848317929087604ae",
+    "origami-aidp-guides-v0.3.1.zip": "69860926511d3ca1ac9a73021ebd879a9ae48b958ca1ef58b4d955492880c8fc",
+    "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
+    "participant-guide.md": "9130ee46bd79a31ff2c42179074a58984cce16e244b6923ea3280657b6421bb9",
     "delivery-agenda.md": "948f9a1719818ad82d46db4c31cc8963f1fcb5d80083d1efa03b5ffe7fb1d999",
     "service-brief.md": "48aadf1a456e00cc6def51ef02c219c59a2e3c3197d13c1444f9113f68cadcc3",
-    "readiness.md": "2136bfebca3b69b89027674736401479fb6584785c783f42bc89e51ad883e000",
+    "readiness.md": "065d01400fe14263684831388390d857c6f41145a4eef3ba97677766a23c6c08",
     "asset-map.md": "843e96c952a89cd99fe4f593f634fa3610838de5475efff5b504b5602858ff8a"
-  }
+  },
+  "reusablePackageExecution": "UNEXECUTED_WITH_DISABLED_RUNTIME_DEFAULTS",
+  "pending": [
+    "class_access_and_isolation",
+    "live_knowledge_base",
+    "live_copilot",
+    "registered_model_parity",
+    "class_concurrency",
+    "classroom_timing"
+  ],
+  "rehearsalSummary": "Facilitator rehearsal verified readiness, the Day 1 data pipeline, Lakehouse results and prepared-model batch scoring. This is not a full-class acceptance test: participant access, live benefits retrieval/Copilot, concurrency and the 90-minute classroom timing remain pending."
 }

@@ -2,7 +2,7 @@
 
 Two 90-minute AIDP sessions using facilitator-prepared assets. Fictional training organization and synthetic data only.
 
-Current release: v0.3.0-asset-preview. Guides and the participant asset pack are downloadable. Local fixture/model/contract checks passed; Spark, Lakehouse, registered-model, RAG/agent and classroom timing validation are still pending.
+Current release: v0.3.1-learner-preview. Guides and the participant asset pack are downloadable. All six notebooks include first-time-user instructions, per-cell actions, completion checkpoints and troubleshooting. Begin with START_HERE.md in the participant ZIP, or CLASS_START_HERE.md in your privately assigned preloaded folder. Local fixture/model/contract checks passed. Facilitator readiness, Day 1 Spark/Lakehouse processing and prepared-model batch scoring passed a separate cloud rehearsal. Class access/isolation, registered-model parity, live RAG/agent, concurrency and classroom timing remain pending. This is not yet a class-ready release.
 
 Start at index.html or the published GitHub Pages site. See asset-map.md and readiness.md. Download the FULL participant pack; the notebooks depend on shared files and administrator runtime bindings.
 
