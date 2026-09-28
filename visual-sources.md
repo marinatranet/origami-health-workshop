@@ -1,6 +1,6 @@
 # Visual sources and interpretation
 
-Seven unmodified product screenshots are reproduced from Oracle documentation (copyright Oracle and/or its affiliates). They illustrate UI controls, not Origami deployment or test results. Diagrams and expected examples are original Origami teaching aids based on the synthetic workshop contracts.
+Ten unmodified product screenshots are reproduced from Oracle documentation (copyright Oracle and/or its affiliates): seven AIDP and three OAC references. They illustrate UI controls, not Origami deployment or test results. The OAC references use Oracle sales samples, not the workshop claims data. Diagrams and expected examples are original Origami teaching aids based on the synthetic workshop contracts.
 
 - `screen-notebook-overview.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_addsamplecode.png).
 - `screen-notebook-run.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_runmenu.png).
@@ -9,3 +9,6 @@ Seven unmodified product screenshots are reproduced from Oracle documentation (c
 - `screen-agent-canvas.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_canvas.png).
 - `screen-agent-instructions.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_supervisorconfig.png).
 - `screen-agent-session.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/agent-creation.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/agentflows_createtest.png).
+- `screen-oac-joins.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-mutli-table-data-set/index.html) · [original image](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-mutli-table-data-set/images/sales_joins.png).
+- `screen-oac-index.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/index.html) · [original image](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/images/index_dataset.png).
+- `screen-oac-insights.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/index.html) · [original image](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/images/additional_insights.png).

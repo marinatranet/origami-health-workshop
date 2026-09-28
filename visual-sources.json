@@ -55,6 +55,30 @@
       "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
       "credit": "Oracle documentation",
       "isOrigamiDeploymentEvidence": false
+    },
+    "screen-oac-joins.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-mutli-table-data-set/images/sales_joins.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-mutli-table-data-set/index.html",
+      "sha256": "aa09eb7023a08919300cd690bd443724272086c766ff69a0026d4bc60d77a3da",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-oac-index.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/images/index_dataset.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/index.html",
+      "sha256": "597e7615867ea0e5f3e29240ef42cdc23186ab6e1acea3cd4a19fc6959abb522",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
+    },
+    "screen-oac-insights.png": {
+      "sourceImage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/images/additional_insights.png",
+      "sourcePage": "https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/index.html",
+      "sha256": "efcbd7cdd700c65e6e7c2c3b7e6853fe8bab638647dafdf901dbe2e939669aad",
+      "kind": "UNMODIFIED_ORACLE_PRODUCT_REFERENCE",
+      "credit": "Oracle documentation",
+      "isOrigamiDeploymentEvidence": false
     }
   }
 }
