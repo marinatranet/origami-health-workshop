@@ -1,26 +1,29 @@
 {
-  "version": "v0.3.4-learning-guide",
+  "version": "v0.3.5-oac-guide",
   "status": "asset_preview",
   "sessions": [
     "day1",
-    "day2"
+    "day2",
+    "day3"
   ],
   "notebooksIncluded": true,
   "readyForLiveWorkshop": false,
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "574ca53ba1a5eb19ad8fec9523db84f4676eca4fb3c164e23b496711db5d5c8e",
+    "index.html": "caa6b88ad0030936b8f65f26f993004ca047cd3591c3c8ba09d1059703f738dd",
     "styles.css": "aa092db18e925a65c09b6ad1e17fe95ff3bda8b5e841d6ed8b10a411c785836b",
-    "README.md": "e194cd8fd3026afc5ff1ed088dcb824e42d5f349de800c6c995a8d752b92c1c4",
+    "README.md": "35b3f6f34b33ebc9242c18f0b5c1970378092a60d7e78ef107d682ce6077e862",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-aidp-guides-v0.3.4.zip": "a03563a425db2012543dc3c31f411ae9c41e485e8317798330002247eed7af4a",
+    "origami-workshop-guides-v0.3.5.zip": "20a0b963d3a7dd6319d08dc2e38a6d62d791261e7484b5562d7c5127d81de5a2",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
-    "participant-guide.md": "ccec79fb55fbf8c0fd74cf4a00293badccb46c26d80d081e48f0ff3a40666148",
-    "delivery-agenda.md": "948f9a1719818ad82d46db4c31cc8963f1fcb5d80083d1efa03b5ffe7fb1d999",
+    "origami-oac-reference-v0.3.5.zip": "4e35162ec39c87e10cdaf21e0406d51748be76e18e5fd532090a26e02aa97b1e",
+    "participant-guide.md": "23abc808c751bc11de7435cab12ff3cf5f9afea1e11d5e733d3d10cf9aed34db",
+    "delivery-agenda.md": "6eaa212dda74902c48129fd312d39465194eec21c9f963e6c167f661f940647a",
     "service-brief.md": "48aadf1a456e00cc6def51ef02c219c59a2e3c3197d13c1444f9113f68cadcc3",
-    "readiness.md": "065d01400fe14263684831388390d857c6f41145a4eef3ba97677766a23c6c08",
+    "readiness.md": "d4eff97c034b025a4d2c44187f8dbc1f5284dc44fc2a33df4ed605c56dcdde8d",
     "asset-map.md": "843e96c952a89cd99fe4f593f634fa3610838de5475efff5b504b5602858ff8a",
+    "oac-guide.md": "0e64458707a6a022b1e3ecc601cdac81da804ac4811768a781f6140b338406ab",
     "screen-notebook-overview.png": "d0dc3a0a11592061d2a201aad0667fe44437b33fe69f2df7c746c6c1b0a18416",
     "screen-notebook-run.png": "cb8b745bceaffa9bc6cb17f5a6e913d001d591f622e9f73ebe3baa7b1777cfdb",
     "screen-notebook-results.png": "7aae0428b39d243de12c866160da3d2040cb24a7e6000ef98553af99e9d0caa2",
@@ -30,7 +33,17 @@
     "screen-agent-session.png": "a96c8833fa4d2627b0af4f3b23fe1df99a802a27a4625680c791f3ef7650d85e",
     "visual-sources.json": "50aef20dc4f120c56cb9633d41f15f41c234400c39ae6fb71f841aa2a3c2ea04",
     "visual-sources.md": "e0bd4dea2941eb28f88faab0ed2e083e84f0cfe0536f3af8931a734b68199272",
-    "visual-guide.css": "f216d795e6b0d7504b277f1d7c187262b91043264f7473a18bcfcc3a15753bba"
+    "visual-guide.css": "9b088e11c99e6ef99f3e0e7da977cbb5379707197b7025a6444c23bb794d473b"
+  },
+  "oac": {
+    "state": "REFERENCE_CONTENT_AND_DATA_ONLY",
+    "dataset": "SEPARATE_FROM_AIDP_OUTPUT",
+    "coreSteps": 6,
+    "sourceEstimateMinutes": 45,
+    "classTimingVerified": false,
+    "csvBytesUnchanged": true,
+    "workbookExportIncluded": false,
+    "liveDeploymentVerified": false
   },
   "reusablePackageExecution": "UNEXECUTED_WITH_DISABLED_RUNTIME_DEFAULTS",
   "pending": [
@@ -39,12 +52,13 @@
     "live_copilot",
     "registered_model_parity",
     "class_concurrency",
-    "classroom_timing"
+    "classroom_timing",
+    "oac_connection_import_workbook_assistant_and_rehearsal"
   ],
   "rehearsalSummary": "Facilitator rehearsal verified readiness, the Day 1 data pipeline, Lakehouse results and prepared-model batch scoring. This is not a full-class acceptance test: participant access, live benefits retrieval/Copilot, concurrency and the 90-minute classroom timing remain pending.",
   "visualGuide": {
     "screenshots": 7,
-    "diagrams": 10,
+    "diagrams": 12,
     "screenshotKind": "SOURCE_ATTRIBUTED_ORACLE_PRODUCT_REFERENCES",
     "notebookAssetsChanged": false
   }

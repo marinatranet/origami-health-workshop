@@ -1,6 +1,6 @@
 # Origami Health — hands-on durations
 
-Each AIDP hands-on session is planned for 90 minutes using prepared, tested assets. Day 1 includes 20 minutes of setup checks, 60 minutes of guided exercises and 10 minutes of catch-up; Day 2 includes 5 minutes of readiness, 75 minutes of guided exercises and 10 minutes of catch-up. Timing is an estimate until a classroom-style pilot passes. Separate slides, breaks and Q&A share the remaining 90 minutes of each three-hour day. No clock times are displayed. OAC is separately owned and its draft is unchanged.
+Each AIDP hands-on session is planned for 90 minutes using prepared, tested assets. Day 1 includes 20 minutes of setup checks, 60 minutes of guided exercises and 10 minutes of catch-up; Day 2 includes 5 minutes of readiness, 75 minutes of guided exercises and 10 minutes of catch-up. Timing is an estimate until a classroom-style pilot passes. Separate slides, breaks and Q&A share the remaining 90 minutes of each three-hour day. No clock times are displayed. OAC uses a separate six-step reference lab; its source timing estimate awaits presenter rehearsal.
 
 ## Delivery assumptions — prepared assets
 
@@ -37,3 +37,16 @@ Audience: Data scientists, business and Member Operations representatives, with 
 | 10 min | Catch-up and save results | Buffer |
 
 Outcome: Explain one claim flag, verify benefits citations, modify and test a preconnected Copilot, and record a human review decision.
+
+## Half-Day 3: OAC reference core
+
+45 minutes is the reference core-lab estimate (admin preparation plus participant build), not a validated classroom duration. The presenter must rehearse and confirm the timebox; rebuilding the complete canvas from scratch may need longer. Slides and Q&A are separate. No fixed clock times are published.
+
+1. Confirm the AI Lakehouse connection
+2. Create the claims dataset
+3. Join and profile the self-service model
+4. Index the dataset for OAC Assistant
+5. Build the Executive Overview canvas
+6. Ask questions with OAC Assistant
+
+Days 1–2 build trusted claims data and a member-assistance workflow. Day 3 switches to the claims manager’s view: explore claim volumes, denials, payments and processing time. It uses a separate, prepared synthetic claims star dataset from the reference OAC workshop—not the tables produced in Days 1–2. Districts and coverage programs are fictional teaching categories, not actual business structures. Denials are not evidence of fraud.

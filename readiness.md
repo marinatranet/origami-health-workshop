@@ -26,4 +26,6 @@ Warm Spark/Delta; participant identities and permissions; isolated output paths;
 4. Use synthetic data only and save completed evidence privately.
 5. Core tasks are mandatory; optional tasks do not consume the catch-up buffer.
 
-OAC is outside this asset preview.
+## OAC Half-Day 3 — separate reference core
+
+The original six-step OAC core and five unchanged synthetic reference CSVs are provided separately. This dataset is NOT the AIDP lab output. The source estimates 45 minutes, including admin preparation and participant build; that timing is unverified for this class and rebuilding the full canvas may take longer. See oac-guide.md and the OAC ZIP README for presenter setup. No deployed connection, workbook export or live Assistant validation is included. Publisher, retail and spatial/JSON extensions are outside this copied core.
