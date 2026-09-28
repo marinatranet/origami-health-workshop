@@ -1,4 +1,9 @@
 /* Visual teaching layer: images remain unmodified; captions explain the controls. */
+.learning-summary{margin:18px 0 24px;padding:16px 20px;background:#edf3ea;border-left:3px solid var(--accent);font-size:14px;line-height:1.55}
+.learning-summary>div{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px;padding:5px 0}
+.learning-summary dt{font-weight:700;color:var(--ink)}
+.learning-summary dd{margin:0;color:var(--ink)}
+@media(max-width:600px){.learning-summary{padding:14px}.learning-summary>div{grid-template-columns:1fr;gap:2px;padding:7px 0}}
 .visual-map{margin-top:48px;padding:32px;background:#edf3ea;border:1px solid var(--line)}
 .visual-map>h2{font:34px/1.2 var(--serif);margin:0 0 14px;max-width:760px}
 .visual-map>p{max-width:790px;color:var(--muted)}

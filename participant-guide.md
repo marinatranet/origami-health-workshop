@@ -15,6 +15,13 @@ Claims, Benefits, Provider and Member Operations: build trusted data, investigat
 
 ## Half-Day 1 · Setup and access check — allow 15–20 minutes
 
+
+**Objective:** Get ready to work safely in your assigned environment.
+
+**What to do:** Open notebook 00, select the assigned compute and run the access checks.
+
+**What you’ll learn:** Identify your workspace, data paths and compute; recognize when to ask for help.
+
 Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open notebook 00_setup_check.ipynb, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 90-minute block.
 
 Save: A completed access checklist or a recorded blocker and agreed paired-work fallback.
@@ -39,7 +46,13 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 ## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (30 min)
 
-Turn claims, members, enrollment, plans and provider inputs into traceable, conformed data products.
+
+**Objective:** Turn raw claims into trustworthy, traceable data.
+
+**What to do:** Run Bronze/Silver, inspect one rejected record and reconcile accepted, rejected and duplicate counts.
+
+**What you’ll learn:** Explain what Bronze and Silver do, why records fail checks and how reconciliation prevents silent data loss.
+
 
 ### Before you begin
 
@@ -91,7 +104,13 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 ## Half-Day 1 · Lab 2: Publish Claims and Benefits data to AI Lakehouse (20 min)
 
-Expose consistent data for claims analysis, claim-level investigation and authorized member-benefit inquiry.
+
+**Objective:** Make validated claims and benefits data available for analysis.
+
+**What to do:** Run Gold and Lakehouse notebooks; check claim totals and one member’s active plans.
+
+**What you’ll learn:** Distinguish claim-level facts from summaries and avoid double-counting when combining data.
+
 
 ### Before you begin
 
@@ -143,6 +162,13 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 ## Half-Day 1 · Governance exercise
 
+
+**Objective:** Understand where data came from and who may access it.
+
+**What to do:** Trace one claim across layers and inspect a prepared allowed/denied access test.
+
+**What you’ll learn:** Distinguish a data trace from an access control; folder names alone do not enforce security.
+
 Trace one supplied synthetic claim from source through Silver to a Gold view (5 minutes). Inspect one prepared allowed/denied access test and explain where scope is enforced (5 minutes). Full role setup, workflow authoring and native-lineage verification are facilitator preparation or follow-up work; declared lineage is not proof of runtime-native lineage.
 
 Save: A record trace and a role-to-data access check.
@@ -157,11 +183,25 @@ Open `index.html#governance` in the guide ZIP for diagrams, annotated reference 
 
 ## Half-Day 1 · Catch-up and save results — 10 minutes
 
+
+**Objective:** Leave Day 1 with a clear, reusable evidence trail.
+
+**What to do:** Finish core checks, save results and record incomplete tasks or fallback snapshots.
+
+**What you’ll learn:** Distinguish verified execution from a viewed example and explain what Day 2 can safely reuse.
+
 Use this reserved time for help, pending core checks and saving the reconciliation/query evidence. Do not add new mandatory content. Record incomplete live tasks and any recovery snapshot used.
 
 Save: Saved Day 1 evidence and an honest completion checklist.
 
 ## Half-Day 2 · Day 2 readiness check
+
+
+**Objective:** Confirm that Day 2’s prepared services and data are available.
+
+**What to do:** Check your Day 1 snapshot, scorer, knowledge base and assigned Copilot; report missing dependencies.
+
+**What you’ll learn:** Recognize how the AI exercises depend on validated data and preconfigured services.
 
 Reconnect, open the assigned scorer, knowledge base and preconnected Copilot, and confirm the validated Day 1 snapshot. Account fixes and deployment are pre-class tasks. Escalate any blocker to the facilitator rather than attempting a fresh setup.
 
@@ -169,7 +209,13 @@ Save: Readiness confirmed or a recorded blocker.
 
 ## Half-Day 2 · Lab 3: Score claims anomalies for investigation (15 min)
 
-Prioritize unusual claims for investigator review and explain the supporting signals.
+
+**Objective:** Use a model score to prioritize human review, not declare fraud.
+
+**What to do:** Run the prepared scorer, compare a flagged claim with a legitimate example and record the reason.
+
+**What you’ll learn:** Interpret a review flag, recognize false positives and retain the model/version reference.
+
 
 ### Before you begin
 
@@ -210,7 +256,13 @@ Open `index.html#lab3` in the guide ZIP for diagrams, annotated reference screen
 
 ## Half-Day 2 · Lab 4: Test the Benefits Knowledge Base (15 min)
 
-Retrieve the right benefit passage for the right plan, service and effective date.
+
+**Objective:** Answer benefit questions using the right policy evidence.
+
+**What to do:** Test one supported and one unsupported question; check the cited plan, version and effective date.
+
+**What you’ll learn:** Verify a grounded answer and recognize when missing evidence requires an explicit limitation.
+
 
 ### Before you begin
 
@@ -262,7 +314,13 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 ## Half-Day 2 · Lab 5: Adapt and test the Member Benefits Inquiry Copilot (35 min)
 
-Help a service representative answer an inquiry by combining authorized member-plan facts with cited benefit documents.
+
+**Objective:** Combine authorized member facts with cited benefit guidance.
+
+**What to do:** Trace the prepared flow, change one citation instruction and run the three supplied tests.
+
+**What you’ll learn:** Explain SQL versus document retrieval, assess a combined answer and distinguish tool-enforced access from prompting.
+
 
 ### Before you begin
 
@@ -343,6 +401,13 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 ## Half-Day 2 · Human-in-the-loop service brief
 
+
+**Objective:** Keep a person accountable for the draft service brief.
+
+**What to do:** Check facts and citations; mark the brief reviewed, edit-required or escalated with a reason.
+
+**What you’ll learn:** Separate AI assistance from a final coverage decision and recognize when evidence needs escalation.
+
 Review the prefilled brief from the Copilot exercise (4 minutes): verify member/plan context, structured facts, cited policy and any gaps. Mark REVIEWED, EDIT_REQUIRED or ESCALATED and record a reason (4 minutes). Save the reviewer decision and timestamp (2 minutes). This is review of a draft, not approval of coverage or payment. No case is created and no message is sent.
 
 Save: A completed brief with reviewer decision, timestamp and rationale.
@@ -357,6 +422,13 @@ Files in the participant asset pack:
 Open `index.html#human-review` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
 
 ## Half-Day 2 · Catch-up and save results — 10 minutes
+
+
+**Objective:** Finish with an honest record of your results and remaining gaps.
+
+**What to do:** Save test evidence and the reviewed brief; record unresolved checks and any fallback used.
+
+**What you’ll learn:** Explain which outputs are supported by evidence and which still require validation.
 
 Use the buffer for response delays, questions, pending core checks and saving the reviewed brief. Optional challenges do not displace core tasks or extend the session.
 
