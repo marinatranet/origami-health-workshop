@@ -15,7 +15,7 @@ Claims, Benefits, Provider and Member Operations: build trusted data, investigat
 
 ## Half-Day 1 · Setup and access check — allow 15–20 minutes
 
-Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open starter notebook 01, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 90-minute block.
+Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open notebook 00_setup_check.ipynb, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 90-minute block.
 
 Save: A completed access checklist or a recorded blocker and agreed paired-work fallback.
 

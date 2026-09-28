@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.2-visual-guide",
+  "version": "v0.3.3-visual-guide",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -10,13 +10,13 @@
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "b02bb74d8b82770df055f084e3c9146c24b57dfe47e1b518bbc686e7cf7765f3",
+    "index.html": "17003cdb022b2ed4aa8daacdf5c7854d0ba48f0bab3ef762a03f82c5002e59d9",
     "styles.css": "aa092db18e925a65c09b6ad1e17fe95ff3bda8b5e841d6ed8b10a411c785836b",
-    "README.md": "3984806c5b1ae4271257bc1b27903ede3724c38dc4ef8debf0d247d65530a91d",
+    "README.md": "fa3de8dadc3f9e56d387fa8f9d1b36ae93bc22acf518e7a94394679f6ecd6a12",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-aidp-guides-v0.3.2.zip": "dbfe24f05559463528684c12baed37d9406a09675259f6782f5ab29aeb819e4c",
+    "origami-aidp-guides-v0.3.3.zip": "5903160002f117f96b88e78b6cf7b770ea8eaffe4d06a466b999d663230194f5",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
-    "participant-guide.md": "ab539b920aace00464fae8a3179b4b828c785f102b73a59bb0333faf64c98c41",
+    "participant-guide.md": "69ee928de3b50ce7a3d258f2afb416f293475ffe7aaa8104952bf6c1b49534ae",
     "delivery-agenda.md": "948f9a1719818ad82d46db4c31cc8963f1fcb5d80083d1efa03b5ffe7fb1d999",
     "service-brief.md": "48aadf1a456e00cc6def51ef02c219c59a2e3c3197d13c1444f9113f68cadcc3",
     "readiness.md": "065d01400fe14263684831388390d857c6f41145a4eef3ba97677766a23c6c08",
