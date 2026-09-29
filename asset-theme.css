@@ -1,0 +1,122 @@
+/* Workshop assets intentionally mirror the restrained reference-workshop pattern. */
+.workshop-assets {
+  --asset-border: #d7dadd;
+  --asset-muted: #5c6267;
+  --asset-link: #245b7a;
+}
+
+.asset-package-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.asset-package,
+.asset-package.asset-primary {
+  min-height: 220px;
+  padding: 22px 20px;
+  background: #fff;
+  border: 1px solid var(--asset-border);
+}
+
+.asset-tag,
+.asset-primary .asset-tag {
+  padding: 0;
+  background: transparent;
+  color: var(--asset-muted);
+  letter-spacing: 1.2px;
+}
+
+.asset-package h3 {
+  margin-top: 12px;
+}
+
+.package-action a,
+.asset-actions a {
+  display: inline;
+  padding: 0;
+  background: transparent;
+  color: var(--asset-link);
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.package-action a:hover,
+.package-action a:focus-visible,
+.asset-actions a:hover,
+.asset-actions a:focus-visible {
+  background: transparent;
+  color: var(--ink);
+}
+
+.package-action small,
+.asset-actions a small {
+  display: block;
+  margin: 4px 0 0;
+  color: var(--asset-muted);
+  font-size: 10px;
+  opacity: 1;
+}
+
+.asset-audience-strip {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  background: transparent;
+  border: 0;
+}
+
+.asset-audience-strip > div {
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid var(--asset-border);
+}
+
+.asset-audience-strip span {
+  color: var(--asset-muted);
+}
+
+.asset-status {
+  padding: 14px 16px;
+  background: #f7f7f6;
+  border: 1px solid var(--asset-border);
+  border-left: 3px solid #73797d;
+  color: var(--ink);
+}
+
+.asset-reference-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.asset-reference-grid > a,
+.asset-reference-grid > span {
+  border-color: var(--asset-border);
+}
+
+.asset-reference-grid > a:hover,
+.asset-reference-grid > a:focus-visible {
+  border-color: #899094;
+  background: #fff;
+}
+
+.asset-map-details {
+  border-color: var(--asset-border);
+}
+
+.asset-actions button {
+  background: #fff;
+  color: var(--ink);
+  border-color: #73797d;
+}
+
+.asset-actions button:hover {
+  background: #f4f4f3;
+}
+
+@media (max-width: 900px) {
+  .asset-package-grid,
+  .asset-audience-strip,
+  .asset-reference-grid {
+    grid-template-columns: 1fr;
+  }
+}
