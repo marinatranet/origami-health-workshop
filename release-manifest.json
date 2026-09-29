@@ -1,5 +1,5 @@
 {
-  "version": "v0.3.8-collapsible-navigation",
+  "version": "v0.3.9-editorial-hero",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -11,11 +11,11 @@
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "42d6fca2c38dc9f557e1336b8fc93f0d2a6e4fdd5bdabb792477ce225f3ea445",
-    "styles.css": "aa092db18e925a65c09b6ad1e17fe95ff3bda8b5e841d6ed8b10a411c785836b",
-    "README.md": "d3ba8dcb4eb09922f1de4900bf0c75f224d4ca197cbfd17ae3755367cf80c65f",
+    "index.html": "ee5e06570c6205216e2d7a998cb40a18d2832a2b2adc4198f238d69f7439093d",
+    "styles.css": "d094e5c50ce4edb2cdcb27a0a198bb27709a36ea523cc60b127189f08a4e5112",
+    "README.md": "0fc6d998abadd3e0717ec42a4e967044da4e13f15733e3d3a96d32d7265c2abe",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-workshop-guides-v0.3.8.zip": "2c303676e2a9074c840fd686ff60a16105b2d7d89de50317d3799a803041c3a2",
+    "origami-workshop-guides-v0.3.9.zip": "a17a66a06d5124928d6721c4fcc515a88def9f3496d366743e8a3253c25a1582",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
     "origami-oac-reference-v0.3.5.zip": "4e35162ec39c87e10cdaf21e0406d51748be76e18e5fd532090a26e02aa97b1e",
     "participant-guide.md": "809a3573fc088e811490d8d1738c4380acfcd74cf104f5282614c352079ea24e",
