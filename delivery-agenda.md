@@ -16,7 +16,7 @@ Audience: Data Management, data engineers, architects and governance leads
 | Duration | Activity | Format |
 |---:|---|---|
 | 20 min | Setup and access check | Setup |
-| 30 min | Bronze/Silver: run and investigate | Hands-on · Lab 1 |
+| 30 min | Medallion architecture: Bronze/Silver | Hands-on · Lab 1 |
 | 20 min | Gold and AI Lakehouse: run and validate | Hands-on · Lab 2 |
 | 10 min | Governance checkpoint | Hands-on checkpoint |
 | 10 min | Catch-up and save results | Buffer |

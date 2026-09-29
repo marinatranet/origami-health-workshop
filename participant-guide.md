@@ -44,7 +44,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 - Top right: confirm the facilitator-assigned Spark compute is active.
 - Read the Markdown instructions above each cell. Run the first binding cell in every notebook.
 
-## Half-Day 1 · Lab 1: Build Bronze and Silver HMO data products (30 min)
+## Half-Day 1 · Lab 1: Medallion architecture: Bronze/Silver (30 min)
 
 
 **Objective:** Turn raw claims into trustworthy, traceable data.

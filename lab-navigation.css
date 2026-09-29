@@ -1,0 +1,74 @@
+/* Group the workshop navigation by half-day while keeping every activity directly reachable. */
+@media (min-width: 1001px) {
+  .layout {
+    grid-template-columns: 275px minmax(0, 1fr);
+  }
+}
+
+nav a {
+  margin-bottom: 8px;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+nav a span {
+  margin-bottom: 3px;
+  font-size: 10px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.nav-group {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.nav-session {
+  font-weight: 650;
+}
+
+.nav-submenu {
+  margin: 0 0 14px 10px;
+  padding-left: 8px;
+  border-left: 2px solid var(--line);
+}
+
+.nav-submenu a {
+  margin-bottom: 2px;
+  padding: 7px 8px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.nav-submenu a:hover,
+.nav-submenu a:focus-visible {
+  color: var(--ink);
+}
+
+.nav-utility {
+  font-size: 12.5px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    align-items: flex-start;
+  }
+
+  .nav-group {
+    min-width: 225px;
+    margin-top: 0;
+    padding: 0 8px 0 0;
+    border-top: 0;
+    border-right: 1px solid var(--line);
+  }
+
+  .nav-group > a,
+  .nav-submenu a {
+    min-width: 0;
+  }
+
+  .nav-submenu {
+    margin-left: 8px;
+  }
+}
