@@ -1,0 +1,62 @@
+/* Calm healthcare palette: blue hierarchy, light neutral surfaces, clear actions. */
+:root {
+  --ink: #243b58;
+  --muted: #52647a;
+  --accent: #0053cc;
+  --paper: #f7f8f9;
+  --line: #d7e4f5;
+  --mint: #e0edff;
+  --blue-deep: #003e99;
+  --blue-soft: #f1f6ff;
+}
+
+body { background: var(--paper); }
+header { background: #fff; border-top: 4px solid var(--accent); }
+aside { background: #fff; }
+h1, h2, h3, .brand, .workshop-path strong { color: var(--blue-deep); }
+.mark, .hero em { color: var(--accent); }
+nav a:hover, nav a:focus-visible { background: var(--mint); color: var(--blue-deep); }
+nav .nav-primary { color: var(--blue-deep); }
+button { background: var(--accent); border-color: var(--accent); }
+button:hover { background: var(--blue-deep); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline-color: var(--accent); }
+
+.hero-planning, .orientation-goals > div, .session-purpose > div { background: #fff; }
+.status, .asset-status { background: #f4f7fb; border-color: var(--line); border-left-color: #7b91ad; color: var(--muted); }
+.timing, .single-step, .checkpoint { background: var(--blue-soft); border-left-color: var(--accent); }
+.lab, .exercise.flow-lab, #day3 .exercise { border-top-color: var(--accent); }
+.learning-summary > div { background: #f7faff; }
+.context-details[open], .reference-details[open], .supporting-visuals[open],
+.facilitator-details[open], .running-order[open] { background: #f7faff; }
+.break { background: var(--blue-soft); }
+.download-grid a { background: var(--mint); }
+
+.visual-map, .learning-summary, .concept-box.positive { background: #eaf2ff; }
+.claims-stages > li, .teaching-diagram, .reference-shot,
+.single-step, .test-cards section { background: #f7faff; }
+.claims-outcomes div, .citation-chip, .stage-tags span,
+.oac-paths p, .oac-layout p, .oac-kpis span { background: var(--mint); border-color: var(--line); }
+.claims-boundary, .instruction-card, .concept-box.caution { background: #f4f8ff; border-left-color: var(--accent); }
+.claims-stages > li, .concept-box, .concept-box.caution { border-top-color: var(--accent); }
+.flow-nodes > li { border-top-color: var(--accent); }
+.node-kicker, .test-cards b, .swimlanes h5 { color: var(--blue-deep); }
+.evidence-pair > section { border-left-color: #6b9bdf; }
+.evidence-pair > section:last-child { border-left-color: var(--accent); }
+.reconciliation div:first-child strong { color: var(--blue-deep); }
+.star-center { background: var(--mint); border-color: var(--accent); }
+.branch-entry, .branch-exit { background: var(--blue-deep); }
+.visual-label { color: var(--blue-deep); }
+.image-link { border-color: var(--line); }
+
+.workshop-assets { --asset-border: var(--line); --asset-muted: var(--muted); --asset-link: var(--accent); }
+.asset-package, .asset-package.asset-primary, .asset-audience-strip > div { background: #fff; }
+.asset-package { border-top: 3px solid var(--line); }
+.asset-package.asset-primary { border-top-color: var(--accent); }
+.asset-reference-grid > a:hover, .asset-reference-grid > a:focus-visible { border-color: var(--accent); background: #f7faff; }
+.asset-actions button { border-color: var(--accent); color: var(--accent); }
+.asset-actions button:hover { background: var(--mint); }
+
+@media print {
+  body { background: #fff; }
+  header { border-top-color: var(--accent); }
+}

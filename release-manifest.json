@@ -1,5 +1,5 @@
 {
-  "version": "v0.5.0-guided-flow",
+  "version": "v0.5.1-blue-theme",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -11,11 +11,11 @@
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "e683732b259d1d1851dc8d44b2348f736358f7675aa04956065bf801296b54e7",
+    "index.html": "556d4935b7a90d5a498def077b40b28d5f8405493f9673a654bd8d32130bf6fe",
     "styles.css": "334a931e16a74d6e75278eeda6718c70fe9f1cb253840a37e20bbce374b5fa4c",
-    "README.md": "3b0b25f6def42156cfb42c016139323dbb38c99742d63b043cffa7b87dbe7faa",
+    "README.md": "3fa227e096bd7d6aa179e14a11596c562df1b3e94b7cf093f99bda9a5f578113",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-workshop-guides-v0.5.0.zip": "0d57664256aa5ace892ef9815a59e9e191cd87ef9a3cd1aa56795b874041cc52",
+    "origami-workshop-guides-v0.5.1.zip": "7c15e9e5dacaff5e3d3e62397f2b89ec3c02c87d4bb9d63221f2c8c3b5c9c418",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
     "origami-oac-reference-v0.3.5.zip": "4e35162ec39c87e10cdaf21e0406d51748be76e18e5fd532090a26e02aa97b1e",
     "participant-guide.md": "412277e62544b3912f4f5fd7eeb415b2225c82daefa01a434b1d2ac00998a4b8",
@@ -40,7 +40,8 @@
     "visual-guide.css": "20e99d0fadc27391b991e935dc7a9c6d96dc91a75a0146d74687d64bf6bf30e3",
     "lab-navigation.css": "85f5da54aad2dc555826f119fa47dc7576bd3433dadcafebb8f6fd7f91507490",
     "asset-theme.css": "9e8c6ebe0de16fde43cc0ed95bf6a1fd1c749eaaf836c0c51e3358e4f43aa03a",
-    "participant-flow.css": "53ef8f5259ae0b60f774070648957a6fb84485498ac63f9849f04b1257394cdc"
+    "participant-flow.css": "53ef8f5259ae0b60f774070648957a6fb84485498ac63f9849f04b1257394cdc",
+    "health-blue-theme.css": "4b5d53c875d3f43916d5588b770712256d32a4a5f164ceeb495b51c192701f27"
   },
   "oac": {
     "state": "REFERENCE_CONTENT_AND_DATA_ONLY",

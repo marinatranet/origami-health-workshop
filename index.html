@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Origami Health | Hands-on Workshop</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visual-guide.css"><link rel="stylesheet" href="lab-navigation.css"><link rel="stylesheet" href="asset-theme.css"><link rel="stylesheet" href="participant-flow.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Origami Health | Hands-on Workshop</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visual-guide.css"><link rel="stylesheet" href="lab-navigation.css"><link rel="stylesheet" href="asset-theme.css"><link rel="stylesheet" href="participant-flow.css"><link rel="stylesheet" href="health-blue-theme.css"></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><a class="brand" href="#top"><span class="mark" aria-hidden="true">◩</span> ORIGAMI <span>HEALTH</span></a><span class="header-note">AIDP + OAC · Hands-on guide</span></header>
 <div class="layout"><aside><p class="eyebrow">WORKSHOP FLOW</p><p class="nav-intro">Start with Orientation, then complete each lab in order. Open supporting references only when you need them.</p><nav aria-label="Workshop sessions"><a class="nav-utility nav-primary" href="#orientation">Orientation</a><p class="nav-section-label">Half-Day 1 · AIDP</p><a href="#setup"><span>Guided step</span>Setup and access check</a><a href="#lab1"><span>Lab 1</span>Medallion architecture: Bronze/Silver</a><a href="#lab2"><span>Lab 2</span>Publish Claims and Benefits data to AI Lakehouse</a><a href="#governance"><span>Guided step</span>Governance checkpoint</a><p class="nav-section-label">Half-Day 2 · AIDP</p><a href="#readiness-day2"><span>Guided step</span>Reconnect and check readiness</a><a href="#lab3"><span>Lab 3</span>Score claims anomalies for investigation</a><a href="#lab4"><span>Lab 4</span>Test the Benefits Knowledge Base</a><a href="#lab5"><span>Lab 5</span>Adapt and test the Member Benefits Inquiry Copilot</a><a href="#human-review"><span>Guided step</span>Human review</a><p class="nav-section-label">Half-Day 3 · OAC</p><a href="#day3"><span>Reference lab</span>Claims Command Center &amp; Assistant</a><p class="nav-section-label">Finish</p><a href="#learning-check"><span>Closeout</span>Check your understanding</a><a class="nav-utility" href="#assets">Workshop assets</a></nav><div class="side-note">3 sessions<br><strong>AIDP: 90 min · OAC: 45 min source estimate</strong><br>AIDP includes catch-up time</div></aside>
@@ -6,46 +6,46 @@
 <svg viewBox="0 0 720 560" role="img" aria-labelledby="hero-art-title hero-art-desc">
 <title id="hero-art-title">From claims data to evidence and human review</title>
 <desc id="hero-art-desc">A paper-inspired illustration connects a synthetic claim, an origami bird carrying evidence and a person reviewing a member service brief.</desc>
-<rect width="720" height="560" rx="28" fill="#edf3ea"/>
-<path d="M0 80H720M0 480H720" stroke="#d6e1d6" stroke-width="1"/>
-<text x="42" y="45" fill="#526965" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">A HUMAN-CENTERED DATA STORY</text>
+<rect width="720" height="560" rx="28" fill="#eaf2ff"/>
+<path d="M0 80H720M0 480H720" stroke="#c9dcf5" stroke-width="1"/>
+<text x="42" y="45" fill="#52647a" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">A HUMAN-CENTERED DATA STORY</text>
 
 <g transform="rotate(-2 130 176)">
-  <rect x="42" y="88" width="190" height="180" rx="8" fill="#fffdf8" stroke="#c7d4cc" stroke-width="2"/>
-  <rect x="42" y="88" width="190" height="42" rx="8" fill="#123f3b"/>
-  <path d="M42 122H232" stroke="#123f3b" stroke-width="16"/>
+  <rect x="42" y="88" width="190" height="180" rx="8" fill="#ffffff" stroke="#bdd0eb" stroke-width="2"/>
+  <rect x="42" y="88" width="190" height="42" rx="8" fill="#003e99"/>
+  <path d="M42 122H232" stroke="#003e99" stroke-width="16"/>
   <text x="60" y="115" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">SYNTHETIC CLAIM</text>
-  <text x="60" y="157" fill="#123f3b" font-family="Georgia, serif" font-size="22">C-0721</text>
-  <path d="M60 177H202M60 199H182M60 221H150" stroke="#9fb1a7" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="196" cy="223" r="18" fill="#e4efdf"/>
-  <path d="m187 223 6 6 12-15" fill="none" stroke="#276553" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="157" fill="#003e99" font-family="Georgia, serif" font-size="22">C-0721</text>
+  <path d="M60 177H202M60 199H182M60 221H150" stroke="#a8bfdc" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="196" cy="223" r="18" fill="#e0edff"/>
+  <path d="m187 223 6 6 12-15" fill="none" stroke="#0053cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 
-<path d="M230 181C278 170 292 204 327 214" fill="none" stroke="#ca653e" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
+<path d="M230 181C278 170 292 204 327 214" fill="none" stroke="#0053cc" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
 
 <g aria-label="Origami bird representing evidence in motion">
-  <polygon points="282,228 433,116 398,286" fill="#fffdf8" stroke="#123f3b" stroke-width="3" stroke-linejoin="round"/>
-  <polygon points="433,116 554,196 398,286" fill="#d6e7d1" stroke="#123f3b" stroke-width="3" stroke-linejoin="round"/>
-  <polygon points="282,228 398,286 333,332" fill="#ca653e" stroke="#123f3b" stroke-width="3" stroke-linejoin="round"/>
-  <polygon points="398,286 554,196 505,325" fill="#f6cf9e" stroke="#123f3b" stroke-width="3" stroke-linejoin="round"/>
-  <polygon points="505,325 585,358 480,353" fill="#123f3b" stroke="#123f3b" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="526" cy="204" r="4" fill="#123f3b"/>
-  <path d="M316 239 398 286 433 116M398 286 505 325" fill="none" stroke="#6b8971" stroke-width="2"/>
+  <polygon points="282,228 433,116 398,286" fill="#ffffff" stroke="#003e99" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="433,116 554,196 398,286" fill="#d6e8ff" stroke="#003e99" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="282,228 398,286 333,332" fill="#0053cc" stroke="#003e99" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="398,286 554,196 505,325" fill="#a9ccff" stroke="#003e99" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="505,325 585,358 480,353" fill="#003e99" stroke="#003e99" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="526" cy="204" r="4" fill="#003e99"/>
+  <path d="M316 239 398 286 433 116M398 286 505 325" fill="none" stroke="#6b9bdf" stroke-width="2"/>
 </g>
 
 <g transform="rotate(2 550 393)">
-  <rect x="454" y="324" width="222" height="174" rx="8" fill="#fffdf8" stroke="#c7d4cc" stroke-width="2"/>
-  <circle cx="494" cy="369" r="24" fill="#f6cf9e"/>
-  <path d="M477 373c3-18 31-21 35 0v9h-35z" fill="#123f3b"/>
-  <circle cx="494" cy="363" r="10" fill="#ca653e"/>
-  <text x="529" y="357" fill="#526965" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">MEMBER BRIEF</text>
-  <text x="529" y="381" fill="#123f3b" font-family="Georgia, serif" font-size="19">Human review</text>
-  <path d="M478 417H642M478 439H612M478 461H627" stroke="#9fb1a7" stroke-width="7" stroke-linecap="round"/>
-  <rect x="566" y="471" width="88" height="28" rx="14" fill="#123f3b"/>
+  <rect x="454" y="324" width="222" height="174" rx="8" fill="#ffffff" stroke="#bdd0eb" stroke-width="2"/>
+  <circle cx="494" cy="369" r="24" fill="#a9ccff"/>
+  <path d="M477 373c3-18 31-21 35 0v9h-35z" fill="#003e99"/>
+  <circle cx="494" cy="363" r="10" fill="#0053cc"/>
+  <text x="529" y="357" fill="#52647a" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">MEMBER BRIEF</text>
+  <text x="529" y="381" fill="#003e99" font-family="Georgia, serif" font-size="19">Human review</text>
+  <path d="M478 417H642M478 439H612M478 461H627" stroke="#a8bfdc" stroke-width="7" stroke-linecap="round"/>
+  <rect x="566" y="471" width="88" height="28" rx="14" fill="#003e99"/>
   <text x="610" y="490" text-anchor="middle" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1">REVIEWED</text>
 </g>
 
-<g fill="#123f3b" font-family="Segoe UI, Arial, sans-serif">
+<g fill="#003e99" font-family="Segoe UI, Arial, sans-serif">
   <text x="42" y="527" font-size="11" font-weight="700" letter-spacing="1.2">01 · TRUST THE DATA</text>
   <text x="268" y="527" font-size="11" font-weight="700" letter-spacing="1.2">02 · CITE THE EVIDENCE</text>
   <text x="515" y="527" font-size="11" font-weight="700" letter-spacing="1.2">03 · KEEP A HUMAN</text>
@@ -182,7 +182,7 @@
 <section class="resources workshop-assets" id="assets"><span class="anchor-alias" id="downloads" aria-hidden="true"></span><p class="eyebrow">WORKSHOP ASSETS</p><h2>Everything needed to start, run and validate the labs</h2><p class="asset-intro">Your assigned AIDP folder is the preferred classroom starting point. The public packages are recovery copies and offline references; they do not contain credentials or private environment bindings.</p>
 <div class="asset-package-grid">
 <article class="asset-package asset-primary"><span class="asset-tag">START HERE</span><h3>Participant execution pack</h3><p>Notebooks, synthetic data, prepared model, benefit documents, test cases and evidence templates for AIDP Days 1 and 2.</p><div class="package-action" data-package-slot="participant"><a href="origami-aidp-participant-v0.3.1.zip" download>Download participant pack <small>ZIP · AIDP Days 1–2</small></a></div></article>
-<article class="asset-package"><span class="asset-tag">OFFLINE GUIDE</span><h3>Workshop guide pack</h3><p>The website, concise participant guide, session plan, diagrams and source-attributed product screenshots for offline use.</p><div class="package-action" data-package-slot="guides"><a href="origami-workshop-guides-v0.5.0.zip" download>Download guide pack <small>ZIP · offline copy</small></a></div></article>
+<article class="asset-package"><span class="asset-tag">OFFLINE GUIDE</span><h3>Workshop guide pack</h3><p>The website, concise participant guide, session plan, diagrams and source-attributed product screenshots for offline use.</p><div class="package-action" data-package-slot="guides"><a href="origami-workshop-guides-v0.5.1.zip" download>Download guide pack <small>ZIP · offline copy</small></a></div></article>
 <article class="asset-package"><span class="asset-tag">HALF-DAY 3</span><h3>OAC reference pack</h3><p>A separate synthetic claims star, table SQL, validation queries and presenter instructions. It is not the output of the AIDP labs.</p><div class="package-action" data-package-slot="oac"><a href="origami-oac-reference-v0.3.5.zip" download>Download OAC pack <small>ZIP · separate reference core</small></a></div></article>
 </div>
 <div class="asset-audience-strip"><div><span>PARTICIPANT</span><strong>Use your assigned folder</strong><p>Open START_HERE, confirm your slot and use the ZIP only if recovery is needed.</p></div><div><span>FACILITATOR</span><strong>Check readiness first</strong><p>Review the environment checklist and lab-to-file map before admitting the class.</p></div><div><span>OAC PRESENTER</span><strong>Use the separate OAC pack</strong><p>Prepare the reference dataset independently; it is intentionally decoupled from Days 1 and 2.</p></div></div>
