@@ -1,6 +1,6 @@
 # Visual sources and interpretation
 
-Ten unmodified product screenshots are reproduced from Oracle documentation (copyright Oracle and/or its affiliates): seven AIDP and three OAC references. They illustrate UI controls, not Origami deployment or test results. The OAC references use Oracle sales samples, not the workshop claims data. Diagrams and expected examples are original Origami teaching aids based on the synthetic workshop contracts.
+Ten unmodified product screenshots are reproduced from Oracle documentation (copyright Oracle and/or its affiliates): seven AIDP and three OAC references. They illustrate UI controls, not Origami deployment or test results. The OAC references use Oracle sales samples, not the workshop claims data. Most diagrams and expected examples are original Origami teaching aids based on the synthetic workshop contracts. The claims transformation context diagram is adapted from Project Origami vision material supplied by the workshop sponsor; the public version omits customer branding and presents a conceptual target state, not deployment evidence.
 
 - `screen-notebook-overview.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_addsamplecode.png).
 - `screen-notebook-run.png`: [Oracle source page](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html) · [original image](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/img/notebook_runmenu.png).
