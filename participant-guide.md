@@ -20,7 +20,7 @@ Claims, Benefits, Provider and Member Operations: build trusted data, investigat
 
 **What to do:** Open notebook 00, select the assigned compute and run the access checks.
 
-**What you’ll learn:** Identify your workspace, data paths and compute; recognize when to ask for help.
+**Intended outcome:** Identify your workspace, data paths and compute; recognize when to ask for help.
 
 Use this 20-minute allowance to sign in to the prepared AIDP workspace, confirm your participant folder and isolated schema, open notebook 00_setup_check.ipynb, select the already-running compute and run the supplied read-only access check against the source volume and Lakehouse. Confirm the recovery snapshot and where to save evidence. This is an access check, not platform provisioning or software installation. Ask the facilitator to resolve failed checks; if still blocked, pair with a working participant and record what remains unresolved. If setup finishes in 15 minutes, use the remaining five minutes as lab support buffer within the same 90-minute block.
 
@@ -51,7 +51,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 **What to do:** Run Bronze/Silver, inspect one rejected record and reconcile accepted, rejected and duplicate counts.
 
-**What you’ll learn:** Explain what Bronze and Silver do, why records fail checks and how reconciliation prevents silent data loss.
+**Intended outcome:** Explain what Bronze and Silver do, why records fail checks and how reconciliation prevents silent data loss.
 
 
 ### Before you begin
@@ -109,7 +109,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 **What to do:** Run Gold and Lakehouse notebooks; check claim totals and one member’s active plans.
 
-**What you’ll learn:** Distinguish claim-level facts from summaries and avoid double-counting when combining data.
+**Intended outcome:** Distinguish claim-level facts from summaries and avoid double-counting when combining data.
 
 
 ### Before you begin
@@ -167,7 +167,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 **What to do:** Trace one claim across layers and inspect a prepared allowed/denied access test.
 
-**What you’ll learn:** Distinguish a data trace from an access control; folder names alone do not enforce security.
+**Intended outcome:** Distinguish a data trace from an access control; folder names alone do not enforce security.
 
 Trace one supplied synthetic claim from source through Silver to a Gold view (5 minutes). Inspect one prepared allowed/denied access test and explain where scope is enforced (5 minutes). Full role setup, workflow authoring and native-lineage verification are facilitator preparation or follow-up work; declared lineage is not proof of runtime-native lineage.
 
@@ -188,7 +188,7 @@ Open `index.html#governance` in the guide ZIP for diagrams, annotated reference 
 
 **What to do:** Finish core checks, save results and record incomplete tasks or fallback snapshots.
 
-**What you’ll learn:** Distinguish verified execution from a viewed example and explain what Day 2 can safely reuse.
+**Intended outcome:** Distinguish verified execution from a viewed example and explain what Day 2 can safely reuse.
 
 Use this reserved time for help, pending core checks and saving the reconciliation/query evidence. Do not add new mandatory content. Record incomplete live tasks and any recovery snapshot used.
 
@@ -201,7 +201,7 @@ Save: Saved Day 1 evidence and an honest completion checklist.
 
 **What to do:** Check your Day 1 snapshot, scorer, knowledge base and assigned Copilot; report missing dependencies.
 
-**What you’ll learn:** Recognize how the AI exercises depend on validated data and preconfigured services.
+**Intended outcome:** Recognize how the AI exercises depend on validated data and preconfigured services.
 
 Reconnect, open the assigned scorer, knowledge base and preconnected Copilot, and confirm the validated Day 1 snapshot. Account fixes and deployment are pre-class tasks. Escalate any blocker to the facilitator rather than attempting a fresh setup.
 
@@ -214,7 +214,7 @@ Save: Readiness confirmed or a recorded blocker.
 
 **What to do:** Run the prepared scorer, compare a flagged claim with a legitimate example and record the reason.
 
-**What you’ll learn:** Interpret a review flag, recognize false positives and retain the model/version reference.
+**Intended outcome:** Interpret a review flag, recognize false positives and retain the model/version reference.
 
 
 ### Before you begin
@@ -261,7 +261,7 @@ Open `index.html#lab3` in the guide ZIP for diagrams, annotated reference screen
 
 **What to do:** Test one supported and one unsupported question; check the cited plan, version and effective date.
 
-**What you’ll learn:** Verify a grounded answer and recognize when missing evidence requires an explicit limitation.
+**Intended outcome:** Verify a grounded answer and recognize when missing evidence requires an explicit limitation.
 
 
 ### Before you begin
@@ -319,7 +319,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 **What to do:** Trace the prepared flow, change one citation instruction and run the three supplied tests.
 
-**What you’ll learn:** Explain SQL versus document retrieval, assess a combined answer and distinguish tool-enforced access from prompting.
+**Intended outcome:** Explain SQL versus document retrieval, assess a combined answer and distinguish tool-enforced access from prompting.
 
 
 ### Before you begin
@@ -406,7 +406,7 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 
 **What to do:** Check facts and citations; mark the brief reviewed, edit-required or escalated with a reason.
 
-**What you’ll learn:** Separate AI assistance from a final coverage decision and recognize when evidence needs escalation.
+**Intended outcome:** Separate AI assistance from a final coverage decision and recognize when evidence needs escalation.
 
 Review the prefilled brief from the Copilot exercise (4 minutes): verify member/plan context, structured facts, cited policy and any gaps. Mark REVIEWED, EDIT_REQUIRED or ESCALATED and record a reason (4 minutes). Save the reviewer decision and timestamp (2 minutes). This is review of a draft, not approval of coverage or payment. No case is created and no message is sent.
 
@@ -428,7 +428,7 @@ Open `index.html#human-review` in the guide ZIP for diagrams, annotated referenc
 
 **What to do:** Save test evidence and the reviewed brief; record unresolved checks and any fallback used.
 
-**What you’ll learn:** Explain which outputs are supported by evidence and which still require validation.
+**Intended outcome:** Explain which outputs are supported by evidence and which still require validation.
 
 Use the buffer for response delays, questions, pending core checks and saving the reviewed brief. Optional challenges do not displace core tasks or extend the session.
 

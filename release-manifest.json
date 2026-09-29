@@ -1,5 +1,5 @@
 {
-  "version": "v0.4.2-claims-context",
+  "version": "v0.5.0-guided-flow",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -11,14 +11,14 @@
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "472f8a0ed958db0e0cfc4b0f29993e37257ce71b9c8a69c423ca0d6b6069be51",
+    "index.html": "e683732b259d1d1851dc8d44b2348f736358f7675aa04956065bf801296b54e7",
     "styles.css": "334a931e16a74d6e75278eeda6718c70fe9f1cb253840a37e20bbce374b5fa4c",
-    "README.md": "500d210abe3feddfdf25376a4bd16f1bb9c4823ad929d6f5e4561a335308088b",
+    "README.md": "3b0b25f6def42156cfb42c016139323dbb38c99742d63b043cffa7b87dbe7faa",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-workshop-guides-v0.4.2.zip": "a2379fee368d124997fbfd71e0a433e88e50136ca5f56f2664cf222f8f35dbfb",
+    "origami-workshop-guides-v0.5.0.zip": "0d57664256aa5ace892ef9815a59e9e191cd87ef9a3cd1aa56795b874041cc52",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
     "origami-oac-reference-v0.3.5.zip": "4e35162ec39c87e10cdaf21e0406d51748be76e18e5fd532090a26e02aa97b1e",
-    "participant-guide.md": "809a3573fc088e811490d8d1738c4380acfcd74cf104f5282614c352079ea24e",
+    "participant-guide.md": "412277e62544b3912f4f5fd7eeb415b2225c82daefa01a434b1d2ac00998a4b8",
     "delivery-agenda.md": "44b3e2384f9968d6015f309bb4bdb4feccc7ea3ec1fa3cf1863c2f6f222a3f9d",
     "service-brief.md": "48aadf1a456e00cc6def51ef02c219c59a2e3c3197d13c1444f9113f68cadcc3",
     "readiness.md": "d4eff97c034b025a4d2c44187f8dbc1f5284dc44fc2a33df4ed605c56dcdde8d",
@@ -39,7 +39,8 @@
     "visual-sources.md": "d1f7209313a78a3725b02968b36a29160eeb626d958c0c23d4caa709533f53aa",
     "visual-guide.css": "20e99d0fadc27391b991e935dc7a9c6d96dc91a75a0146d74687d64bf6bf30e3",
     "lab-navigation.css": "85f5da54aad2dc555826f119fa47dc7576bd3433dadcafebb8f6fd7f91507490",
-    "asset-theme.css": "9e8c6ebe0de16fde43cc0ed95bf6a1fd1c749eaaf836c0c51e3358e4f43aa03a"
+    "asset-theme.css": "9e8c6ebe0de16fde43cc0ed95bf6a1fd1c749eaaf836c0c51e3358e4f43aa03a",
+    "participant-flow.css": "53ef8f5259ae0b60f774070648957a6fb84485498ac63f9849f04b1257394cdc"
   },
   "oac": {
     "state": "REFERENCE_CONTENT_AND_DATA_ONLY",
