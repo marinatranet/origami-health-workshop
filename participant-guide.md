@@ -47,6 +47,11 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 ## Half-Day 1 · Lab 1: Medallion architecture: Bronze/Silver (30 min)
 
 
+**Business benefit — Trust the claims entering analysis:** Identify bad and duplicate records before they distort reporting.
+
+**Demonstrate it:** Reconcile all 725 source rows and explain one rejected claim.
+
+
 **Objective:** Turn raw claims into trustworthy, traceable data.
 
 **What to do:** Run Bronze/Silver, inspect one rejected record and reconcile accepted, rejected and duplicate counts.
@@ -103,6 +108,11 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 - The reference image shows Mac shortcuts; use the menu or play control on your laptop.
 
 ## Half-Day 1 · Lab 2: Publish Claims and Benefits data to AI Lakehouse (20 min)
+
+
+**Business benefit — Reuse one governed data foundation:** Give claims analysts and member-service teams data at the right level of detail.
+
+**Demonstrate it:** Validate claims totals and the supplied member-benefit queries.
 
 
 **Objective:** Make validated claims and benefits data available for analysis.
@@ -163,6 +173,11 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 ## Half-Day 1 · Governance exercise
 
 
+**Business benefit — Trace data and protect member access:** Make the source of a result and its permitted audience explicit.
+
+**Demonstrate it:** Save lineage evidence and the actual access-test result.
+
+
 **Objective:** Understand where data came from and who may access it.
 
 **What to do:** Trace one claim across layers and inspect a prepared allowed/denied access test.
@@ -210,6 +225,11 @@ Save: Readiness confirmed or a recorded blocker.
 ## Half-Day 2 · Lab 3: Score claims anomalies for investigation (15 min)
 
 
+**Business benefit — Prioritize claims for investigation:** Use explainable signals to focus a reviewer’s attention—not to declare fraud.
+
+**Demonstrate it:** Explain one review flag and one legitimate high-value claim.
+
+
 **Objective:** Use a model score to prioritize human review, not declare fraud.
 
 **What to do:** Run the prepared scorer, compare a flagged claim with a legitimate example and record the reason.
@@ -255,6 +275,11 @@ Save: One annotated investigation example with its score/version reference.
 Open `index.html#lab3` in the guide ZIP for diagrams, annotated reference screenshots and expected-result checkpoints.
 
 ## Half-Day 2 · Lab 4: Test the Benefits Knowledge Base (15 min)
+
+
+**Business benefit — Find benefits evidence faster:** Retrieve current policy terms with citations instead of relying on an unsupported answer.
+
+**Demonstrate it:** Verify a supported citation and recognize an evidence gap.
 
 
 **Objective:** Answer benefit questions using the right policy evidence.
@@ -313,6 +338,11 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 - Run R1 and R2 through the assigned RAG test interface; a KB is not queried directly.
 
 ## Half-Day 2 · Lab 5: Adapt and test the Member Benefits Inquiry Copilot (35 min)
+
+
+**Business benefit — Prepare better member-service answers:** Combine authorized member facts and policy evidence in a reviewable response.
+
+**Demonstrate it:** Test SQL facts, cited benefit terms and denial of other-member access.
 
 
 **Objective:** Combine authorized member facts with cited benefit guidance.
@@ -400,6 +430,11 @@ Product reference from Oracle documentation, not a live Origami capture. Example
 - Run C1, C2 and C3. Capture the actual answer, tool evidence and citations; expected answers are not test results.
 
 ## Half-Day 2 · Human-in-the-loop service brief
+
+
+**Business benefit — Keep decisions accountable:** Keep coverage and claims decisions with a person, not an automatically accepted AI draft.
+
+**Demonstrate it:** Record accept-draft, edit or escalate with a reason.
 
 
 **Objective:** Keep a person accountable for the draft service brief.
@@ -560,3 +595,68 @@ The original six-step core is retained. Publisher, retail-opportunity analysis a
 - [Oracle: multi-table datasets](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-mutli-table-data-set/index.html)
 - [Oracle: configure and use Analytics AI Assistant](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-oa-assistant/index.html)
 - [Oracle: KPI tile sparklines](https://docs.oracle.com/en/cloud/paas/analytics-cloud/tutorial-tile-spark-chart/)
+
+
+## References — Oracle official documentation
+
+Oracle documentation links checked on 29 September 2026. Screens and feature availability can change by release and region. The supplied screenshots are Oracle product references, not captures of your deployed environment; follow your assigned lab and facilitator guidance.
+
+Optional reading; not additional timed tasks.
+
+### AIDP foundation and notebooks
+
+Related: Setup, Lab 1: Bronze/Silver
+
+- [Introduction to Oracle AI Data Platform](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/introduction-oracle-ai-data-platform.html) — Platform, catalog, Spark and governed data concepts.
+- [Get started with AIDP](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/get-started-oracle-ai-data-platform.html) — Prerequisites, access and AI-feature requirements; provisioning is facilitator preparation.
+- [AIDP workspaces](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/workspaces.html) — Workspace organization, folders and participant files.
+- [AIDP notebooks](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/notebooks.html) — Notebook cells, supported languages, execution and results.
+- [AIDP compute](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/compute.html) — Compute types and links to cluster guidance; use the assigned compute.
+
+### Gold, AI Lakehouse and governance
+
+Related: Lab 2: Gold/Lakehouse, Governance checkpoint
+
+- [AIDP external catalogs](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/external-catalogs.html) — External database connections, metadata and query access.
+- [Autonomous AI Database documentation](https://docs.oracle.com/en/cloud/paas/autonomous-database/index.html) — Database administration and development reference.
+- [Use Lakehouse with Autonomous AI Database](https://docs.oracle.com/en/cloud/paas/autonomous-database/serverless/adbsb/autonomous-lakehouse.html) — Lakehouse architecture and object-storage analytics patterns.
+- [AIDP permissions model](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/permissions-model.html) — Workbench resource permissions alongside OCI IAM; folder names alone do not enforce access.
+
+### Machine learning and claims review
+
+Related: Lab 3: Claims anomaly scoring
+
+- [Machine Learning in AIDP](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/machine-learning.html) — Experiments, runs, model registry and notebook inference. The core lab uses a prepared scorer, not model training.
+
+### Knowledge Bases, RAG and AI Agents
+
+Related: Lab 4: Benefits Knowledge Base, Lab 5: Member Benefits Copilot, Human review
+
+- [AIDP Knowledge Bases](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/knowledge-bases.html) — Document ingestion, chunking, embeddings and job status. Query through an agent’s RAG tool.
+- [AIDP AI Agents](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/ai-agent-flows.html) — Agent flows and SQL/RAG tools. AI compute is required for tool testing; SQL tools use external catalogs.
+- [Guardrails for OCI Generative AI](https://docs.oracle.com/en-us/iaas/Content/generative-ai/guardrails.htm) — Additional safety controls to evaluate where supported; these do not replace member authorization or human review.
+
+### Oracle Analytics Cloud
+
+Related: Half-Day 3: OAC reference lab
+
+- [Create a dataset from a connection](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/create-dataset-from-connection.html) — Steps 1–3: select prepared tables and model their relationships.
+- [Index a dataset for Oracle Analytics AI Assistant](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/indexing-dataset-oracle-analytics-ai-assistant.html) — Step 4: understand indexing and fields available to Assistant.
+- [Generate workbook visualizations with AI Assistant](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/generate-visualizations-workbooks-oracle-analytics-ai-assistant.html) — Steps 5–6: ask dataset-grounded questions and work with generated visualizations.
+- [Share a workbook](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/share-workbook.html) — Optional follow-up: controlled workbook access. Keep learner evidence private unless sharing is approved.
+
+### Facilitator preparation and further reading
+
+Related: Before class, Lab 1 background
+
+- [Overview of OCI Object Storage](https://docs.oracle.com/en-us/iaas/Content/Object/Concepts/objectstorageoverview.htm) — Buckets, objects, namespaces and access. Participants use prepared sources; no bucket creation is required in the core labs.
+- [Configure AIDP workflow jobs](https://docs.oracle.com/en/cloud/paas/ai-data-platform/aidug/configure-jobs.html) — Orchestration, scheduling and run inspection; workflow authoring is outside the core classroom timebox.
+
+### Responsible-use reminders
+
+- Use synthetic claims and member data only. Do not upload real health records, identifiers, passwords or wallets to notebooks, AI prompts or public repositories.
+- Index only approved workshop documents and necessary analytics fields. Check plan, version, inquiry date and source citations.
+- Limit SQL tools to approved read-only tables and the authorized member scope. Enforce access in the tool/data layer, not only in prompts.
+- Keep RAG retrieval within the approved benefits Knowledge Base; report missing evidence and unresolved coordination rules.
+- Verify Copilot and OAC Assistant answers against the underlying evidence. Claim flags and denials are not proof of fraud.
+- Keep coverage, eligibility, claim denial, payment and medical decisions with authorized people. Workshop outputs are reviewable drafts, not operational actions.
