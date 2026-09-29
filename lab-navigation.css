@@ -24,8 +24,53 @@ nav a span {
   border-top: 1px solid var(--line);
 }
 
-.nav-session {
-  font-weight: 650;
+.nav-group > summary {
+  position: relative;
+  padding: 10px 28px 10px 10px;
+  border: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-group > summary::after {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  color: var(--accent);
+  content: "›";
+  font-size: 18px;
+  line-height: 1;
+  transform: rotate(90deg);
+  transition: transform .15s ease;
+}
+
+.nav-group:not([open]) > summary::after {
+  transform: rotate(0deg);
+}
+
+.nav-group > summary:hover,
+.nav-group > summary:focus-visible {
+  background: var(--mint);
+}
+
+.nav-group > summary span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.nav-group > summary strong {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.4;
 }
 
 .nav-submenu {
@@ -46,6 +91,10 @@ nav a span {
   color: var(--ink);
 }
 
+.nav-overview {
+  font-weight: 650;
+}
+
 .nav-utility {
   font-size: 12.5px;
 }
@@ -63,7 +112,7 @@ nav a span {
     border-right: 1px solid var(--line);
   }
 
-  .nav-group > a,
+  .nav-group > summary,
   .nav-submenu a {
     min-width: 0;
   }
