@@ -55,10 +55,16 @@
 
 .asset-file-card ul {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 7px 17px;
+  grid-template-columns: 1fr;
+  gap: 5px;
   margin: 0;
   padding-left: 20px;
+}
+
+.asset-file-card li {
+  margin: 0;
+  padding-left: 0;
+  line-height: 1.45;
 }
 
 .asset-file-card a {
@@ -159,12 +165,6 @@
   .asset-file-grid,
   .asset-audience-strip,
   .asset-reference-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .asset-file-card ul {
     grid-template-columns: 1fr;
   }
 }

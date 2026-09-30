@@ -1,5 +1,5 @@
 {
-  "version": "v0.7.1-detailed-assets",
+  "version": "v0.7.2-compact-assets",
   "status": "asset_preview",
   "sessions": [
     "day1",
@@ -11,11 +11,11 @@
   "localValidation": "PASS",
   "liveAIDP": "FACILITATOR_DAY1_AND_PREPARED_SCORING_VERIFIED",
   "files": {
-    "index.html": "2c8699da1fb42c9ce0dbe7c5825802699f666b01dcb2512de38222815380d1b3",
+    "index.html": "54ea0c79303ab3eb6bc3617c01a067ea58620d63ba4db606818df4e26079009e",
     "styles.css": "334a931e16a74d6e75278eeda6718c70fe9f1cb253840a37e20bbce374b5fa4c",
-    "README.md": "fec54f4e0d3a294db1a85a1491d60e2f59bbacea43dd57499a76c2cce312cbb3",
+    "README.md": "f17790a65137a2c920ad9d149c14026e49d1a336cdf463e9bfcb5647823f547c",
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "origami-workshop-guides-v0.7.1.zip": "3d4407b0578406783d4550c481be6beb2560b30e84d5c446599270de87d35b94",
+    "origami-workshop-guides-v0.7.2.zip": "b9ee6920d2111b634dd75711e0fae1d005678bfd611c467e6213db817e6085b0",
     "origami-aidp-participant-v0.3.1.zip": "be6e4f283c881f3fc2772e97c8035c554eff09fec8fd6d9d2061e84ad21720f7",
     "origami-oac-reference-v0.3.5.zip": "4e35162ec39c87e10cdaf21e0406d51748be76e18e5fd532090a26e02aa97b1e",
     "participant-guide.md": "a1fc46361bd7d1d91164c3d66f39e6fec46798c15e499f471da37a2ca4d81574",
@@ -40,7 +40,7 @@
     "visual-sources.md": "d1f7209313a78a3725b02968b36a29160eeb626d958c0c23d4caa709533f53aa",
     "visual-guide.css": "20e99d0fadc27391b991e935dc7a9c6d96dc91a75a0146d74687d64bf6bf30e3",
     "lab-navigation.css": "85f5da54aad2dc555826f119fa47dc7576bd3433dadcafebb8f6fd7f91507490",
-    "asset-theme.css": "3accc859c0719b45f2c3aa968bc957d42bc30d691f143b9fd14ea85b7006b7d8",
+    "asset-theme.css": "9e9535e2c58e76783709f735da819ad6f814ff3a89c1e12c756941a658fdbb26",
     "participant-flow.css": "53ef8f5259ae0b60f774070648957a6fb84485498ac63f9849f04b1257394cdc",
     "health-blue-theme.css": "368557272f2cf61cd53366e9e8e096fac789f1b65f7fd8c39fbacadc94bee613",
     "files/aidp/contracts/DATA_CONTRACT.md": "4c6f43c4859b942ec62e0e0e66b1181b42c9ce25d7cf17fb63782d3da8926a37",
