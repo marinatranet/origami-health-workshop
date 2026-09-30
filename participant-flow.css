@@ -223,6 +223,26 @@ main {
   margin-top: 18px;
 }
 
+.admin-setup { max-width: 1080px; }
+.admin-setup .admin-intro { max-width: 850px; color: var(--muted); }
+.admin-warning { max-width: 850px; padding: 12px 16px; background: #f1f6ff; border-left: 3px solid var(--accent); font-size: 14px; }
+.admin-group { border: 1px solid var(--line); background: #fff; margin: 12px 0; padding: 0; }
+.admin-group > summary { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 15px 18px; color: var(--blue-deep); font-size: 17px; font-weight: 700; }
+.admin-group > summary span { flex: 0 0 auto; color: var(--muted); font-size: 12px; font-weight: 400; }
+.admin-group[open] > summary { border-bottom: 1px solid var(--line); }
+.admin-group > div { padding: 4px 20px 18px; }
+.admin-step { padding: 20px 0 4px; border-bottom: 1px solid var(--line); }
+.admin-step:last-child { border-bottom: 0; }
+.admin-step-heading { display: flex; gap: 18px; align-items: baseline; }
+.admin-step-heading span { flex: 0 0 92px; color: var(--accent); font-size: 12px; font-weight: 700; }
+.admin-step-heading h4 { margin: 0; color: var(--blue-deep); }
+.admin-step > p, .admin-step li { font-size: 14px; line-height: 1.65; }
+.admin-step h5 { margin: 15px 0 3px; font-size: 14px; }
+.admin-step ol { margin: 4px 0 14px; }
+.admin-step .admin-checkpoint { margin: 14px 0 18px; padding: 12px 14px; background: #f1f6ff; border-left: 3px solid var(--accent); }
+@media (max-width: 700px) { .admin-step-heading { display: block; } .admin-step-heading span { display: block; margin-bottom: 6px; } .admin-group > div { padding: 4px 14px 12px; } }
+@media print { .admin-group > div { display: block; } .admin-step { break-inside: avoid; } }
+
 .day {
   padding-top: 82px;
 }

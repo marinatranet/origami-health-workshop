@@ -1164,6 +1164,155 @@ A useful insight states what the data supports and what still needs investigatio
 Where to look: Look for Additional Insights and compare the answer with your own workbook before saving it. Oracle interface example; names and data may differ. See visual-sources.md for attribution.
 
 
+## Administrator preparation — outside the learner sessions
+
+For facilitators and administrators only. These steps are not part of either 90-minute AIDP learner session. Keep live identifiers, credentials, identity mappings, grants and execution evidence in a private run sheet. Oracle interface examples in this guide are not proof of your environment's state.
+
+### Access and sources
+
+#### Admin step 1: Confirm the approved delivery boundary
+
+An administrator must establish the right account, region, compartment and operating allowance before anyone changes shared services.
+
+**What to do**
+
+1. Sign in through the approved organization process. Confirm the workshop tenancy, region, compartment, AIDP Workbench and resource owner in a private run sheet.
+2. Inventory existing services and their state before creating or changing anything. Confirm the approved capacity, operating period and stop plan; obtain a separate decision for any additional paid service.
+
+**Checkpoint:** The run sheet names the approved environment and owner, with no identifiers or credentials in public files.
+
+#### Admin step 2: Check identities and least-privilege access
+
+A folder name is not a security boundary. Each learner needs an individual sign-in and only the permissions required for the exercises.
+
+**What to do**
+
+1. Confirm participant and facilitator accounts in OCI Identity; assign workshop roles through the approved process, not the AIDP administrator role for students.
+2. Verify that a student can open the shared training workspace and their assigned output area. Test both an allowed read and a denied cross-participant read using separate signed-in identities.
+
+**Checkpoint:** Record both access-test outcomes privately. An administrator viewing a student folder does not prove student access or isolation.
+
+#### Admin step 3: Stage and verify the synthetic source package
+
+Day 1 depends on one controlled snapshot of claims, members, enrollments, plans, providers and benefits data.
+
+**What to do**
+
+1. Use the seven synthetic CSVs and data contract from the raw-data bundle. Verify filenames, checksums, row counts and the agreed snapshot before placing them in the approved read-only source location.
+2. Expose that location through the approved AIDP volume or workspace path. Keep live storage identifiers and paths in private runtime settings; do not upload real health records.
+
+**Checkpoint:** The seven files are readable from AIDP and match the packaged snapshot; learners cannot alter the shared source.
+
+
+### Half-Day 1: AIDP foundation
+
+#### Admin step 4: Prepare workspace, Spark and learner folders
+
+The classroom should begin with usable notebooks and compute, not with infrastructure provisioning.
+
+**What to do**
+
+1. Confirm the existing workshop workspace, catalog, volume and supported Spark runtime. Preload the complete execution pack, including helpers, data, model and contracts.
+2. Prepare each learner's notebook copy and output binding. Use the approved shared workspace role, but verify output isolation with real permissions. Start only approved compute and check its ready state before class.
+
+**Checkpoint:** A learner can find notebook 00, attach the intended compute and read the source without an administrator login.
+
+#### Admin step 5: Prepare AI Lakehouse targets and the external catalog
+
+The Gold and Lakehouse lab assumes database tables and a working connection already exist.
+
+**What to do**
+
+1. In the approved dedicated schema, create or verify the reviewed workshop tables and data types. Apply only the grants needed by the assigned users; keep database credentials outside notebooks and GitHub.
+2. Confirm the AIDP external catalog resolves the intended schema and can perform the approved write and read checks. Do not drop, truncate or overwrite mismatched existing rows.
+
+**Checkpoint:** The catalog lists the prepared targets, and a controlled test can read and write only its authorized area.
+
+#### Admin step 6: Run a Day 1 rehearsal and preserve its evidence
+
+A successful import is not proof that the notebooks work end to end.
+
+**What to do**
+
+1. Run setup and notebooks 01–04 in sequence in one facilitator slot. Confirm 725 source claims reconcile to 720 accepted, four rejected and one duplicate; verify all five Gold outputs and both Lakehouse business queries.
+2. Capture actual terminal run statuses and persisted results privately. Repeat the same snapshot to check safe replay. Do not mark a viewed example or a recovery snapshot as a successful live run.
+
+**Checkpoint:** The reconciliation, Lakehouse counts, query answers and replay result match the expected contract.
+
+
+### Half-Day 2: AI preparation
+
+#### Admin step 7: Prepare and validate the claims scorer
+
+Students interpret prepared review signals; model training is outside their short lab.
+
+**What to do**
+
+1. Verify the packaged scorer and model version against the approved synthetic snapshot. Run the scoring notebook and inspect the review reasons and legitimate high-value example.
+2. If a registered model will be shown, test its parity separately with the batch scorer. Keep training labels out of inference features and agent tools.
+
+**Checkpoint:** The scorer produces the expected claim count and versioned evidence; no flag is described as a fraud decision.
+
+#### Admin step 8: Build and test the benefits Knowledge Base
+
+Retrieval must use current, approved policy documents and return traceable passages before the student exercise begins.
+
+**What to do**
+
+1. Ingest only the allowlisted current BASE and PLUS synthetic documents. Confirm source version, effective dates, ingestion completion and citation metadata; exclude archived and adversarial fixtures from the normal index.
+2. Use the approved RAG test interface to ask one supported and one unsupported question. Read the retrieved passage and actual citation, rather than treating an active Knowledge Base shell as success.
+
+**Checkpoint:** The supported answer cites the right current plan and section; the unsupported question exposes the evidence gap.
+
+#### Admin step 9: Connect the Member Benefits Copilot safely
+
+The agent combines structured member facts and policy passages, so access control must be enforced below the prompt.
+
+**What to do**
+
+1. Confirm approved AI compute and model capacity. Connect the chat entry point, read-only member/usage SQL tools and the validated benefits retrieval tool to the supervised flow.
+2. Bind member scope from a trusted authenticated context, not a user-typed ID or model-generated value. Limit queries and rows; forbid arbitrary SQL, claim decisions, payments and operational actions.
+
+**Checkpoint:** The connected flow has active tools, bounded data access and no public unauthenticated endpoint.
+
+#### Admin step 10: Complete Day 2 acceptance before student use
+
+A plausible chat answer is insufficient without tool traces, citations and an out-of-scope denial.
+
+**What to do**
+
+1. Run the supported SQL, combined-policy and unauthorized-member cases, then the missing-evidence, conflicting-policy and action-boundary checks. Inspect actual tool traces and citations.
+2. Grant student access only after an account-level test. Label the Copilot TEST-only until deployment, endpoint and student acceptance are separately complete.
+
+**Checkpoint:** Actual answers and traces are recorded with pass/fail status. A prompt-only refusal does not substitute for a data-layer access denial.
+
+
+### Presenter handoff and final gate
+
+#### Admin step 11: Hand off the separate OAC reference lab
+
+The OAC session uses its own synthetic claims-star dataset, not the output of the AIDP notebooks.
+
+**What to do**
+
+1. The OAC presenter loads and validates the five reference tables, then checks the approved connection, dataset joins, indexing, dashboard and Assistant permissions.
+2. Reconcile the reference totals and test the expected filters and one Assistant answer. Keep connection secrets and instance identifiers in the private presenter handoff.
+
+**Checkpoint:** The presenter can demonstrate the separate six-step core with reconciled metrics; any untested extensions remain labelled as such.
+
+#### Admin step 12: Run the classroom readiness gate and lifecycle review
+
+The final gate distinguishes prepared assets from an experience that a signed-in learner can actually complete.
+
+**What to do**
+
+1. Have a novice follow the guide using a learner account; record actual timing, help requests, cold starts, concurrency and allowed/denied access. Confirm which live AI exercises have passed and which require a labelled fallback.
+2. Review costs and stop or retain compute according to the approved owner plan. Preserve shared resources and private evidence; do not delete services or publish identities, credentials or unredacted screenshots.
+
+**Checkpoint:** A dated private acceptance record lists verified, incomplete and fallback steps, plus the resource owner and operating decision.
+
+
+
 ## References — Oracle official documentation
 
 Oracle documentation links checked on 29 September 2026. Screens and feature availability can change by release and region. The supplied screenshots are Oracle product references, not captures of your deployed environment; follow your assigned lab and facilitator guidance.
