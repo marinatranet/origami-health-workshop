@@ -12,7 +12,7 @@
 
 .asset-package,
 .asset-package.asset-primary {
-  min-height: 220px;
+  min-height: 190px;
   padding: 22px 20px;
   background: #fff;
   border: 1px solid var(--asset-border);
@@ -28,6 +28,47 @@
 
 .asset-package h3 {
   margin-top: 12px;
+}
+
+.asset-file-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.asset-file-card {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--asset-border);
+}
+
+.asset-file-card h3 {
+  margin: 0 0 7px;
+  font-size: 19px;
+}
+
+.asset-file-card p {
+  margin: 0 0 12px;
+  color: var(--asset-muted);
+  font-size: 13px;
+}
+
+.asset-file-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 17px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.asset-file-card a {
+  color: var(--asset-link);
+  text-underline-offset: 3px;
+}
+
+.asset-file-card a:hover,
+.asset-file-card a:focus-visible {
+  color: var(--ink);
 }
 
 .package-action a,
@@ -115,8 +156,15 @@
 
 @media (max-width: 900px) {
   .asset-package-grid,
+  .asset-file-grid,
   .asset-audience-strip,
   .asset-reference-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .asset-file-card ul {
     grid-template-columns: 1fr;
   }
 }

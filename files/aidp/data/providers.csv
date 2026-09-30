@@ -1,0 +1,7 @@
+provider_id,provider_name,specialty,network_status
+P01,Fictional Provider 1,GENERAL,IN_NETWORK
+P02,Fictional Provider 2,GENERAL,IN_NETWORK
+P03,Fictional Provider 3,GENERAL,IN_NETWORK
+P04,Fictional Provider 4,GENERAL,IN_NETWORK
+P05,Fictional Provider 5,GENERAL,IN_NETWORK
+P06,Fictional Provider 6,GENERAL,IN_NETWORK

@@ -1,0 +1,7 @@
+benefit_id,plan_id,plan_version,service_code,limit_value,limit_unit,effective_from,effective_to,document_id,section,exclusions,requirement
+BASE-2025-CONSULT,BASE,2025,CONSULT,4,visits_per_year,2025-01-01,2025-12-31,BASE-2025,CONSULT,COSMETIC not described as a benefit,Representative review; no automatic coverage decision
+BASE-2025-DIAG,BASE,2025,DIAG,4,PHP_per_year,2025-01-01,2025-12-31,BASE-2025,DIAG,COSMETIC not described as a benefit,Representative review; no automatic coverage decision
+BASE-2026-CONSULT,BASE,2026,CONSULT,12,visits_per_year,2026-01-01,2026-12-31,BASE-2026,CONSULT,COSMETIC not described as a benefit,Representative review; no automatic coverage decision
+BASE-2026-DIAG,BASE,2026,DIAG,5000,PHP_per_year,2026-01-01,2026-12-31,BASE-2026,DIAG,COSMETIC not described as a benefit,Representative review; no automatic coverage decision
+PLUS-2026-CONSULT,PLUS,2026,CONSULT,6,visits_per_year,2026-01-01,2026-12-31,PLUS-2026,CONSULT,COSMETIC not described as a benefit,Representative review; no automatic coverage decision
+PLUS-2026-DIAG,PLUS,2026,DIAG,8000,PHP_per_year,2026-01-01,2026-12-31,PLUS-2026,DIAG,COSMETIC not described as a benefit,Representative review; no automatic coverage decision

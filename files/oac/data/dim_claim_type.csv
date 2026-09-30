@@ -1,0 +1,7 @@
+claim_type_key,claim_type,service_category,diagnosis_group
+1,Diagnostic,Diagnostics,Injury and acute care
+2,Emergency,Emergency department,Respiratory
+3,Inpatient,Acute inpatient,Chronic disease
+4,Outpatient,Primary care,Preventive
+5,Pharmacy,Medication,Chronic disease
+6,Preventive,Screening,Maternal child health

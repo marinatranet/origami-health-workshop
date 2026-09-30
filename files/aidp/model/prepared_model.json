@@ -1,0 +1,35 @@
+{
+  "version": "origami-review-logistic-1.0",
+  "algorithm": "standardized_logistic_regression",
+  "features": [
+    "log_amount",
+    "missing_attachment",
+    "prior_duplicate_signal"
+  ],
+  "means": [
+    8.232337300518878,
+    0.18452380952380953,
+    0.0625
+  ],
+  "scales": [
+    0.7280580081255854,
+    0.38791078000312185,
+    0.24206145913796356
+  ],
+  "weights": [
+    1.433090038867115,
+    0.7990526705666907,
+    0.5894863383861181
+  ],
+  "intercept": -2.5456798739859523,
+  "threshold": 0.5,
+  "seed": 42,
+  "training_cutoff": "2026-04-01",
+  "training_rows": 336,
+  "training_fingerprint": "bd7039a5634f680b3d48a7d7bdbf03d2bc1e548ea8622a8110f17864ffee5531",
+  "target": "synthetic_review_required",
+  "classification": "SYNTHETIC; investigator prioritization only",
+  "registry_status": "NOT_REGISTERED",
+  "endpoint_status": "NOT_DEPLOYED",
+  "artifact_digest": "8ec434f7f1491aa916e11fe4b0208591c40c981ad439badbf7ad861bed9cacd2"
+}

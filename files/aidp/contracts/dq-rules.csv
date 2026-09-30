@@ -1,0 +1,8 @@
+rule,fields,expression,disposition
+DUPLICATE_CLAIM,claim_id,lowest source_record_id wins,duplicate
+MEMBER_REFERENCE,member_id,exists in members,reject
+PROVIDER_REFERENCE,provider_id,exists in providers,reject
+AMOUNT,"submitted_amount,paid_amount",finite nonnegative exact centavos; paid <= submitted,reject
+SERVICE_DATE,service_date,valid ISO calendar date,reject
+ENROLLMENT,enrollment_id,member match and service date in interval,reject
+CURRENCY,currency,PHP,reject

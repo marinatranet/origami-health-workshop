@@ -1,0 +1,6 @@
+program_key,program_code,coverage_program,program_type,funding_source
+1,CCS,Chronic Care Support,Condition management,Integrated Care Fund
+2,ECP,Essential Care Plan,Income-based coverage,State Health Fund
+3,MCH,Maternal and Child Health,Family coverage,Maternal Child Grant
+4,SAP,Senior Access Plan,Senior coverage,National Senior Fund
+5,WFP,Worker Family Plan,Subsidized family coverage,Employer Partnership Fund

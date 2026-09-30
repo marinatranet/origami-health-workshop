@@ -1,0 +1,4 @@
+plan_id,plan_version,effective_from,effective_to,document_id
+BASE,2025,2025-01-01,2025-12-31,BASE-2025
+BASE,2026,2026-01-01,2026-12-31,BASE-2026
+PLUS,2026,2026-01-01,2026-12-31,PLUS-2026

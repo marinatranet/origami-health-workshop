@@ -1,0 +1,6 @@
+district_key,district_id,district_name,population,deprivation_index,elderly_pct,chronic_condition_pct,median_income_usd
+1,D01,North Borough,184000,0.37,0.142,0.214,60200
+2,D02,East River,221500,0.58,0.119,0.238,51700
+3,D03,Central City,312800,0.49,0.101,0.198,55400
+4,D04,South Lakes,169400,0.32,0.173,0.225,64100
+5,D05,West Hills,143700,0.26,0.184,0.209,70200

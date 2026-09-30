@@ -1,0 +1,370 @@
+{
+  "counts": {
+    "silver_claims": 720,
+    "silver_rejects": 4,
+    "silver_duplicates": 1,
+    "gold_claim_detail": 720,
+    "gold_claims_monthly": 36,
+    "gold_member_plan": 100,
+    "gold_benefit_usage": 80,
+    "gold_benefit_schedule": 6,
+    "gold_claim_risk_current": 720
+  },
+  "fingerprints": {
+    "silver_claims": "e7387af6f588ecfe02ac1ed570a309330de3481263c4df1109978de2f2f5e81e",
+    "silver_rejects": "af79ef04ef843c4d7535c5e548cc7ade8c9429c44007fc31eeca779d4864d671",
+    "silver_duplicates": "a09bb98edd8da9eebb0258210712130df4e21c8cbd092f249f72e4fd110762a1",
+    "gold_claim_detail": "e7387af6f588ecfe02ac1ed570a309330de3481263c4df1109978de2f2f5e81e",
+    "gold_claims_monthly": "74d83ac986041a915f4b8588ddb4222d4edaf2507e653d98f7c0ef544f15541f",
+    "gold_member_plan": "e94a13555cf2b1afc3b647cd59dfcf45245351b8ba733ea8d466e7cd5f171c67",
+    "gold_benefit_usage": "464189af98c9aad772ab20be971bafff273c45d4b3f456b82e502c251fe6629a",
+    "gold_benefit_schedule": "7aa5237fd354198b5cd6485c16f4fd02fd01bdf7bf545ea286fd7e50aa27e01b",
+    "gold_claim_risk_current": "eb1eb6b1f74b08761f99f827e4267b0f1d2e0a634ab07380955a46e25015b911"
+  },
+  "source_counts": {
+    "members": 60,
+    "plans": 3,
+    "enrollments": 100,
+    "providers": 6,
+    "claims": 725,
+    "benefit_schedule": 6,
+    "benefit_usage": 80
+  },
+  "source_columns": {
+    "members": [
+      "member_id",
+      "slot_id",
+      "segment",
+      "region"
+    ],
+    "plans": [
+      "plan_id",
+      "plan_version",
+      "effective_from",
+      "effective_to",
+      "document_id"
+    ],
+    "enrollments": [
+      "enrollment_id",
+      "member_id",
+      "plan_id",
+      "plan_version",
+      "start_date",
+      "end_date",
+      "enrollment_status"
+    ],
+    "providers": [
+      "provider_id",
+      "provider_name",
+      "specialty",
+      "network_status"
+    ],
+    "claims": [
+      "source_record_id",
+      "claim_id",
+      "member_id",
+      "enrollment_id",
+      "provider_id",
+      "service_code",
+      "service_date",
+      "submitted_amount",
+      "paid_amount",
+      "currency",
+      "status",
+      "processing_days",
+      "missing_attachment",
+      "prior_duplicate_signal",
+      "feature_available_date"
+    ],
+    "benefit_schedule": [
+      "benefit_id",
+      "plan_id",
+      "plan_version",
+      "service_code",
+      "limit_value",
+      "limit_unit",
+      "effective_from",
+      "effective_to",
+      "document_id",
+      "section",
+      "exclusions",
+      "requirement"
+    ],
+    "benefit_usage": [
+      "usage_id",
+      "member_id",
+      "enrollment_id",
+      "service_code",
+      "used_value",
+      "unit",
+      "as_of_date"
+    ]
+  },
+  "claim_totals": {
+    "claim_count": 720,
+    "submitted_centavos": 350248900,
+    "paid_centavos": 175107400
+  },
+  "slot_cases": {
+    "p01": {
+      "authorized_member": "M001",
+      "unauthorized_member": "M004",
+      "authorized_members": [
+        "M001",
+        "M002",
+        "M003"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p02": {
+      "authorized_member": "M004",
+      "unauthorized_member": "M007",
+      "authorized_members": [
+        "M004",
+        "M005",
+        "M006"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p03": {
+      "authorized_member": "M007",
+      "unauthorized_member": "M010",
+      "authorized_members": [
+        "M007",
+        "M008",
+        "M009"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p04": {
+      "authorized_member": "M010",
+      "unauthorized_member": "M013",
+      "authorized_members": [
+        "M010",
+        "M011",
+        "M012"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p05": {
+      "authorized_member": "M013",
+      "unauthorized_member": "M016",
+      "authorized_members": [
+        "M013",
+        "M014",
+        "M015"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p06": {
+      "authorized_member": "M016",
+      "unauthorized_member": "M019",
+      "authorized_members": [
+        "M016",
+        "M017",
+        "M018"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p07": {
+      "authorized_member": "M019",
+      "unauthorized_member": "M022",
+      "authorized_members": [
+        "M019",
+        "M020",
+        "M021"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p08": {
+      "authorized_member": "M022",
+      "unauthorized_member": "M025",
+      "authorized_members": [
+        "M022",
+        "M023",
+        "M024"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p09": {
+      "authorized_member": "M025",
+      "unauthorized_member": "M028",
+      "authorized_members": [
+        "M025",
+        "M026",
+        "M027"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p10": {
+      "authorized_member": "M028",
+      "unauthorized_member": "M031",
+      "authorized_members": [
+        "M028",
+        "M029",
+        "M030"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p11": {
+      "authorized_member": "M031",
+      "unauthorized_member": "M034",
+      "authorized_members": [
+        "M031",
+        "M032",
+        "M033"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p12": {
+      "authorized_member": "M034",
+      "unauthorized_member": "M037",
+      "authorized_members": [
+        "M034",
+        "M035",
+        "M036"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p13": {
+      "authorized_member": "M037",
+      "unauthorized_member": "M040",
+      "authorized_members": [
+        "M037",
+        "M038",
+        "M039"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p14": {
+      "authorized_member": "M040",
+      "unauthorized_member": "M043",
+      "authorized_members": [
+        "M040",
+        "M041",
+        "M042"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p15": {
+      "authorized_member": "M043",
+      "unauthorized_member": "M046",
+      "authorized_members": [
+        "M043",
+        "M044",
+        "M045"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p16": {
+      "authorized_member": "M046",
+      "unauthorized_member": "M049",
+      "authorized_members": [
+        "M046",
+        "M047",
+        "M048"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p17": {
+      "authorized_member": "M049",
+      "unauthorized_member": "M052",
+      "authorized_members": [
+        "M049",
+        "M050",
+        "M051"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p18": {
+      "authorized_member": "M052",
+      "unauthorized_member": "M055",
+      "authorized_members": [
+        "M052",
+        "M053",
+        "M054"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p19": {
+      "authorized_member": "M055",
+      "unauthorized_member": "M058",
+      "authorized_members": [
+        "M055",
+        "M056",
+        "M057"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    },
+    "p20": {
+      "authorized_member": "M058",
+      "unauthorized_member": "M001",
+      "authorized_members": [
+        "M058",
+        "M059",
+        "M060"
+      ],
+      "active_plans": [
+        "BASE",
+        "PLUS"
+      ]
+    }
+  }
+}

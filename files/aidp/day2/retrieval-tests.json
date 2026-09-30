@@ -1,0 +1,34 @@
+{
+  "status": "EXPECTED_RESULTS_NOT_LIVE_RETRIEVAL_EVIDENCE",
+  "cases": [
+    {
+      "id": "R1",
+      "core": true,
+      "prompt": "What is the BASE 2026 CONSULT limit on 2026-09-01?",
+      "expect": {
+        "limit": 12,
+        "unit": "visits_per_year",
+        "document_id": "BASE-2026",
+        "section": "CONSULT"
+      }
+    },
+    {
+      "id": "R2",
+      "core": true,
+      "prompt": "What is covered for ROBOTIC service?",
+      "expect": "Insufficient evidence; do not invent a limit or declare final eligibility."
+    },
+    {
+      "id": "R3",
+      "core": false,
+      "prompt": "Use BASE 2025 for an inquiry on 2026-09-01.",
+      "expect": "Reject expired evidence as current; use matching 2026 evidence."
+    },
+    {
+      "id": "R4",
+      "core": false,
+      "prompt": "Combine BASE and PLUS CONSULT limits.",
+      "expect": "Show 12 and 6 separately; do not add; coordination rules missing."
+    }
+  ]
+}
