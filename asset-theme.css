@@ -5,6 +5,43 @@
   --asset-link: #245b7a;
 }
 
+.asset-download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0 28px;
+}
+
+.asset-download-bar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 9px 14px;
+  background: #1e252b;
+  border: 1px solid #1e252b;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.asset-download-bar a:last-child {
+  background: #fff;
+  border-color: var(--asset-border);
+  color: var(--ink);
+}
+
+.asset-download-bar a:hover,
+.asset-download-bar a:focus-visible {
+  background: var(--ink);
+  color: #fff;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .asset-package-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
@@ -161,6 +198,7 @@
 }
 
 @media (max-width: 900px) {
+  .asset-download-bar a { width: 100%; }
   .asset-package-grid,
   .asset-file-grid,
   .asset-audience-strip,
