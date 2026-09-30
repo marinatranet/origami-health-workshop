@@ -1,0 +1,780 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.981,
+              40.78755
+            ],
+            [
+              -73.891,
+              40.78755
+            ],
+            [
+              -73.891,
+              40.85755
+            ],
+            [
+              -73.981,
+              40.85755
+            ],
+            [
+              -73.981,
+              40.78755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "district_id": "D01",
+        "district_name": "North Borough",
+        "population": 184000,
+        "deprivation_index": 0.37,
+        "elderly_pct": 0.142,
+        "public_health_pressure_index": 32.3,
+        "source_layer": "district_boundary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9292,
+              40.67475
+            ],
+            [
+              -73.8392,
+              40.67475
+            ],
+            [
+              -73.8392,
+              40.74475
+            ],
+            [
+              -73.9292,
+              40.74475
+            ],
+            [
+              -73.9292,
+              40.67475
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "district_id": "D02",
+        "district_name": "East River",
+        "population": 221500,
+        "deprivation_index": 0.58,
+        "elderly_pct": 0.119,
+        "public_health_pressure_index": 41.0,
+        "source_layer": "district_boundary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0331,
+              40.712
+            ],
+            [
+              -73.9431,
+              40.712
+            ],
+            [
+              -73.9431,
+              40.782
+            ],
+            [
+              -74.0331,
+              40.782
+            ],
+            [
+              -74.0331,
+              40.712
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "district_id": "D03",
+        "district_name": "Central City",
+        "population": 312800,
+        "deprivation_index": 0.49,
+        "elderly_pct": 0.101,
+        "public_health_pressure_index": 37.4,
+        "source_layer": "district_boundary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.99025,
+              40.60435
+            ],
+            [
+              -73.90025,
+              40.60435
+            ],
+            [
+              -73.90025,
+              40.67435
+            ],
+            [
+              -73.99025,
+              40.67435
+            ],
+            [
+              -73.99025,
+              40.60435
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "district_id": "D04",
+        "district_name": "South Lakes",
+        "population": 169400,
+        "deprivation_index": 0.32,
+        "elderly_pct": 0.173,
+        "public_health_pressure_index": 34.3,
+        "source_layer": "district_boundary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0849,
+              40.7376
+            ],
+            [
+              -73.9949,
+              40.7376
+            ],
+            [
+              -73.9949,
+              40.8076
+            ],
+            [
+              -74.0849,
+              40.8076
+            ],
+            [
+              -74.0849,
+              40.7376
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "district_id": "D05",
+        "district_name": "West Hills",
+        "population": 143700,
+        "deprivation_index": 0.26,
+        "elderly_pct": 0.184,
+        "public_health_pressure_index": 33.6,
+        "source_layer": "district_boundary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9448,
+          40.8122
+        ]
+      },
+      "properties": {
+        "facility_id": "F001",
+        "facility_name": "North Borough General Hospital",
+        "facility_type": "Hospital",
+        "district_id": "D01",
+        "licensed_beds": 220,
+        "access_risk_score": 25.8,
+        "bed_occupancy_rate": 0.7665,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9272,
+          40.8329
+        ]
+      },
+      "properties": {
+        "facility_id": "F002",
+        "facility_name": "Northgate Community Clinic",
+        "facility_type": "Community Clinic",
+        "district_id": "D01",
+        "licensed_beds": 0,
+        "access_risk_score": 21.5,
+        "bed_occupancy_rate": 0.0,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8957,
+          40.7161
+        ]
+      },
+      "properties": {
+        "facility_id": "F003",
+        "facility_name": "East River Medical Center",
+        "facility_type": "Hospital",
+        "district_id": "D02",
+        "licensed_beds": 310,
+        "access_risk_score": 35.0,
+        "bed_occupancy_rate": 0.8162,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8727,
+          40.7034
+        ]
+      },
+      "properties": {
+        "facility_id": "F004",
+        "facility_name": "Riverside Urgent Care",
+        "facility_type": "Urgent Care",
+        "district_id": "D02",
+        "licensed_beds": 24,
+        "access_risk_score": 34.5,
+        "bed_occupancy_rate": 0.5781,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984,
+          40.7549
+        ]
+      },
+      "properties": {
+        "facility_id": "F005",
+        "facility_name": "Central City Health Campus",
+        "facility_type": "Hospital",
+        "district_id": "D03",
+        "licensed_beds": 410,
+        "access_risk_score": 35.3,
+        "bed_occupancy_rate": 0.84,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9922,
+          40.7391
+        ]
+      },
+      "properties": {
+        "facility_id": "F006",
+        "facility_name": "Downtown Preventive Health Center",
+        "facility_type": "Community Clinic",
+        "district_id": "D03",
+        "licensed_beds": 0,
+        "access_risk_score": 30.1,
+        "bed_occupancy_rate": 0.0,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9561,
+          40.6528
+        ]
+      },
+      "properties": {
+        "facility_id": "F007",
+        "facility_name": "South Lakes Regional Hospital",
+        "facility_type": "Hospital",
+        "district_id": "D04",
+        "licensed_beds": 260,
+        "access_risk_score": 26.1,
+        "bed_occupancy_rate": 0.8016,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9344,
+          40.6259
+        ]
+      },
+      "properties": {
+        "facility_id": "F008",
+        "facility_name": "Lakeview Community Clinic",
+        "facility_type": "Community Clinic",
+        "district_id": "D04",
+        "licensed_beds": 0,
+        "access_risk_score": 21.8,
+        "bed_occupancy_rate": 0.0,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0272,
+          40.7838
+        ]
+      },
+      "properties": {
+        "facility_id": "F009",
+        "facility_name": "West Hills Hospital",
+        "facility_type": "Hospital",
+        "district_id": "D05",
+        "licensed_beds": 180,
+        "access_risk_score": 19.9,
+        "bed_occupancy_rate": 0.8479,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0526,
+          40.7614
+        ]
+      },
+      "properties": {
+        "facility_id": "F010",
+        "facility_name": "Hillcrest Urgent Care",
+        "facility_type": "Urgent Care",
+        "district_id": "D05",
+        "licensed_beds": 18,
+        "access_risk_score": 24.3,
+        "bed_occupancy_rate": 0.4081,
+        "source_layer": "facility_location"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9628,
+              40.7972
+            ],
+            [
+              -73.9268,
+              40.7972
+            ],
+            [
+              -73.9268,
+              40.8272
+            ],
+            [
+              -73.9628,
+              40.8272
+            ],
+            [
+              -73.9628,
+              40.7972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F001",
+        "facility_name": "North Borough General Hospital",
+        "district_id": "D01",
+        "catchment_population_estimate": 92000,
+        "access_risk_score": 25.8,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9452,
+              40.8179
+            ],
+            [
+              -73.9092,
+              40.8179
+            ],
+            [
+              -73.9092,
+              40.8479
+            ],
+            [
+              -73.9452,
+              40.8479
+            ],
+            [
+              -73.9452,
+              40.8179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F002",
+        "facility_name": "Northgate Community Clinic",
+        "district_id": "D01",
+        "catchment_population_estimate": 92000,
+        "access_risk_score": 21.5,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9137,
+              40.7011
+            ],
+            [
+              -73.8777,
+              40.7011
+            ],
+            [
+              -73.8777,
+              40.7311
+            ],
+            [
+              -73.9137,
+              40.7311
+            ],
+            [
+              -73.9137,
+              40.7011
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F003",
+        "facility_name": "East River Medical Center",
+        "district_id": "D02",
+        "catchment_population_estimate": 110750,
+        "access_risk_score": 35.0,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.8907,
+              40.6884
+            ],
+            [
+              -73.8547,
+              40.6884
+            ],
+            [
+              -73.8547,
+              40.7184
+            ],
+            [
+              -73.8907,
+              40.7184
+            ],
+            [
+              -73.8907,
+              40.6884
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F004",
+        "facility_name": "Riverside Urgent Care",
+        "district_id": "D02",
+        "catchment_population_estimate": 110750,
+        "access_risk_score": 34.5,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.002,
+              40.7399
+            ],
+            [
+              -73.966,
+              40.7399
+            ],
+            [
+              -73.966,
+              40.7699
+            ],
+            [
+              -74.002,
+              40.7699
+            ],
+            [
+              -74.002,
+              40.7399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F005",
+        "facility_name": "Central City Health Campus",
+        "district_id": "D03",
+        "catchment_population_estimate": 156400,
+        "access_risk_score": 35.3,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0102,
+              40.7241
+            ],
+            [
+              -73.9742,
+              40.7241
+            ],
+            [
+              -73.9742,
+              40.7541
+            ],
+            [
+              -74.0102,
+              40.7541
+            ],
+            [
+              -74.0102,
+              40.7241
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F006",
+        "facility_name": "Downtown Preventive Health Center",
+        "district_id": "D03",
+        "catchment_population_estimate": 156400,
+        "access_risk_score": 30.1,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9741,
+              40.6378
+            ],
+            [
+              -73.9381,
+              40.6378
+            ],
+            [
+              -73.9381,
+              40.6678
+            ],
+            [
+              -73.9741,
+              40.6678
+            ],
+            [
+              -73.9741,
+              40.6378
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F007",
+        "facility_name": "South Lakes Regional Hospital",
+        "district_id": "D04",
+        "catchment_population_estimate": 84700,
+        "access_risk_score": 26.1,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -73.9524,
+              40.6109
+            ],
+            [
+              -73.9164,
+              40.6109
+            ],
+            [
+              -73.9164,
+              40.6409
+            ],
+            [
+              -73.9524,
+              40.6409
+            ],
+            [
+              -73.9524,
+              40.6109
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F008",
+        "facility_name": "Lakeview Community Clinic",
+        "district_id": "D04",
+        "catchment_population_estimate": 84700,
+        "access_risk_score": 21.8,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0452,
+              40.7688
+            ],
+            [
+              -74.0092,
+              40.7688
+            ],
+            [
+              -74.0092,
+              40.7988
+            ],
+            [
+              -74.0452,
+              40.7988
+            ],
+            [
+              -74.0452,
+              40.7688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F009",
+        "facility_name": "West Hills Hospital",
+        "district_id": "D05",
+        "catchment_population_estimate": 71850,
+        "access_risk_score": 19.9,
+        "source_layer": "facility_catchment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.0706,
+              40.7464
+            ],
+            [
+              -74.0346,
+              40.7464
+            ],
+            [
+              -74.0346,
+              40.7764
+            ],
+            [
+              -74.0706,
+              40.7764
+            ],
+            [
+              -74.0706,
+              40.7464
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "facility_id": "F010",
+        "facility_name": "Hillcrest Urgent Care",
+        "district_id": "D05",
+        "catchment_population_estimate": 71850,
+        "access_risk_score": 24.3,
+        "source_layer": "facility_catchment"
+      }
+    }
+  ]
+}
