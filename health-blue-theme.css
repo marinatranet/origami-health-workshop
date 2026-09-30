@@ -152,21 +152,19 @@ summary, .result, .diagram-note { font-size: 15px; line-height: 1.55; }
 .learner-step-heading > span { flex-shrink: 0; font-size: 13px; font-weight: 700; color: var(--accent); }
 .learner-step-heading h4 { margin: 0; font: 700 21px/1.4 var(--sans); color: var(--blue-deep); }
 .step-explanation { margin: 12px 0 20px; max-width: 85ch; }
-.learner-step-body { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(230px, 1fr); gap: 28px; align-items: start; }
+.learner-step-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
 .learner-step-body h5 { font: 700 15px/1.4 var(--sans); margin: 0 0 8px; color: var(--blue-deep); }
 .learner-step-body ol { padding-left: 22px; margin-top: 0; }
 .learner-step-body li { padding-left: 3px; margin-bottom: 12px; line-height: 1.65; }
-.step-expected { padding: 14px 16px; background: var(--blue-soft); border-left: 3px solid var(--accent); font-size: 15px; }
+.step-expected { margin: 0; padding: 14px 16px; background: var(--blue-soft); border-left: 3px solid var(--accent); font-size: 15px; }
 .step-expected strong { display: block; margin-bottom: 6px; }
-.step-shot { margin: 0; min-width: 0; }
+.step-shot { margin: 0; min-width: 0; width: 100%; }
 .step-shot img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
-.step-shot figcaption { font-size: 13px; line-height: 1.6; padding-top: 10px; overflow-wrap: anywhere; }
+.step-shot figcaption { font-size: 13px; line-height: 1.6; padding: 12px 14px; border: 1px solid var(--line); border-top: 0; background: var(--blue-soft); overflow-wrap: anywhere; }
 .step-shot figcaption strong { display: block; color: var(--blue-deep); }
 .step-shot small { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; }
-.step-shot a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 1100px) {
-  .learner-step-body { grid-template-columns: 1fr; gap: 12px; }
-  .step-shot { width: 100%; max-width: 520px; }
+  .learner-step-body { gap: 14px; }
 }
 @media (max-width: 700px) {
   .learner-step-heading { display: block; }
