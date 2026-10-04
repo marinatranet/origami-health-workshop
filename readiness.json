@@ -1,9 +1,6 @@
 {
-  "edition": "reference-flow-20260930",
-  "cloudTarget": "Frankfurt single-admin rehearsal",
-  "uploaded": false,
-  "executed": false,
-  "classReady": false,
-  "singaporeAligned": false,
-  "pdfReady": false
+  "edition": "public-reference-20261005",
+  "website": "public-learning-guide",
+  "environment": "Bring an approved OCI environment or use facilitator-assigned access",
+  "cloudValidation": "Not asserted by this website publication"
 }

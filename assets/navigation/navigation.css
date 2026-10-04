@@ -1,0 +1,45 @@
+
+.sidebar.workshop-nav {
+  height:calc(100dvh - 61px); max-height:calc(100dvh - 61px);
+  padding:0; background:#f7f8f9; border-right:1px solid #e0e3e6;
+  overflow:auto; scrollbar-width:thin; scrollbar-color:#c6cbd0 transparent;
+  overscroll-behavior:contain;
+}
+.workshop-nav .nav-heading {position:sticky;top:0;z-index:2;padding:21px 20px 17px;
+  background:#f7f8f9;border-bottom:1px solid #e0e3e6}
+.workshop-nav .nav-heading h2 {font-size:16px;line-height:1.3;margin:0;color:#23292d}
+.workshop-nav .nav-heading p {margin:5px 0 0;font-size:12px;color:#67717a}
+.workshop-nav .nav-groups {padding:10px 12px 26px}
+.workshop-nav .nav-group + .nav-group {margin-top:18px;padding-top:14px;border-top:1px solid #e0e3e6}
+.workshop-nav .nav-group h3 {margin:0;padding:5px 10px 8px;font-size:11px;
+  font-weight:700;line-height:1.5;color:#67717a;letter-spacing:0;text-transform:uppercase}
+.workshop-nav details {margin:3px 0;border-radius:6px}
+.workshop-nav summary {display:flex;align-items:center;gap:6px;min-height:45px;
+  padding:0 9px 0 0;list-style:none;border-radius:6px;cursor:pointer;color:#45515b}
+.workshop-nav summary::-webkit-details-marker {display:none}
+.workshop-nav summary::after {content:"";width:6px;height:6px;border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;transform:rotate(-45deg);flex:0 0 6px;margin:0 3px 0 auto;
+  transition:transform .15s ease}
+.workshop-nav details[open] > summary::after {transform:rotate(45deg)}
+.workshop-nav a.nav-lab {display:flex;align-items:center;gap:10px;flex:1;min-width:0;
+  min-height:45px;margin:0;padding:9px 10px;border:0;border-radius:6px;
+  font-size:13px;line-height:1.4;font-weight:600;color:#35414b;text-decoration:none}
+.workshop-nav .lab-number {display:flex;align-items:center;justify-content:center;
+  width:27px;height:27px;flex:0 0 27px;border:1px solid #d5dce1;border-radius:5px;
+  background:#fff;color:#63707a;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+.workshop-nav .lab-label {min-width:0;overflow-wrap:break-word}
+.workshop-nav summary:hover,.workshop-nav a.nav-lab:hover {background:#edf0f2}
+.workshop-nav .is-current > summary,.workshop-nav a.nav-lab.is-current {
+  background:#fff;box-shadow:inset 3px 0 #0053cc;color:#003e99}
+.workshop-nav .is-current > summary > a {color:#003e99;background:transparent}
+.workshop-nav .is-current .lab-number {background:#0053cc;border-color:#0053cc;color:#fff}
+.workshop-nav .nav-steps {margin:3px 10px 11px 23px;padding:1px 0 1px 15px;border-left:1px solid #d9dfe4}
+.workshop-nav .nav-steps a {display:block;margin:2px 0;padding:7px 9px;
+  border:0;border-radius:4px;font-size:12px;line-height:1.5;font-weight:400;
+  color:#5c6973;overflow-wrap:break-word}
+.workshop-nav .nav-steps a:hover {background:#eaf0f3;color:#24536d}
+.workshop-nav .nav-steps a[aria-current="location"] {background:#e7eff3;color:#214d65;font-weight:600}
+.workshop-nav a:focus-visible,.workshop-nav summary:focus-visible {
+  outline:2px solid #286784;outline-offset:2px}
+main [id] {scroll-margin-top:90px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.workshop-nav summary::after{transition:none}}

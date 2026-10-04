@@ -1,0 +1,12 @@
+{
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "index.html": "e51cbf4b12488e2da3eb1035f649c526046bfc847240b3b3d8ea30da32aba822",
+    "readiness.json": "b1db1f0b6258fb6fa0ffafa99852f0a047abed899d3572f0971fe27eb4728c3b",
+    "README.md": "3494bb3178107b42b8febc96ef8cb81093eb59a839c6038e6b6ffa9ab4a4b180",
+    "assets/navigation/navigation.css": "505962aeab0b75bb570da05e6bb8814ec3fd5915882ca0906e08f15079e9c3bc",
+    "assets/navigation/navigation.js": "8c2a4fc3e34a5009b1b783b75de0426f50a7d62854b7b8b158ff1925f6285a21"
+  },
+  "referenceSource": "https://jayaramu24.github.io/public-healthcare-AIDP-workshop/",
+  "sourceSha256": "9c2fb3a3c5548b4aec2199f2eb57b347da89d4f52e4ba8bf0b3fb67094b2e295"
+}
